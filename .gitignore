@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+node_modules/
+.expo/
+dist/
+cv/sample_videos/*
+!cv/sample_videos/README.md
+cv/output/
+

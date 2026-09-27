@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "CourtVision",
+    "slug": "courtvision",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "CourtVision accesses your library so you can choose a basketball practice video.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ]
+    ]
+  }
+}
