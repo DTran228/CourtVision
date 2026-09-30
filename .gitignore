@@ -10,4 +10,5 @@ dist/
 cv/sample_videos/*
 !cv/sample_videos/README.md
 cv/output/
-
+cv/models/*
+!cv/models/README.md

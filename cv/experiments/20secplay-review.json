@@ -1,0 +1,226 @@
+{
+  "reviewer": "AI assistant; provisional visual judgments, not human-approved ground truth",
+  "method": "Ball-candidate review; no ground-truth boxes or IoU matching. Uncertain frames excluded.",
+  "split_note": "Earlier frames tune; later frames check. Same clip, already viewed, not an independent blind test.",
+  "prediction_sha256": "0b1df0d09a5772a9d04a2b4c0dca7c083b22e992c2025bb70b7033749360ee6a",
+  "video_sha256": "72da54ffb9ad57775c81c62da9d0be3898a712ba01f2a5648eba3bc3c8601aba",
+  "minimum_confidence": 0.25,
+  "frames": [
+    {
+      "frame": 0,
+      "split": "tune",
+      "status": "reviewed",
+      "note": "Ball candidate checked in enlarged crop; one real ball is visible.",
+      "candidates": [
+        {
+          "index": 0,
+          "correct": true,
+          "note": "Visible basketball."
+        },
+        {
+          "index": 1,
+          "correct": false,
+          "note": "Off-ball player arm."
+        }
+      ]
+    },
+    {
+      "frame": 74,
+      "split": "tune",
+      "status": "duplicate",
+      "note": "Held opening image repeats frame 0; excluded to avoid double counting.",
+      "candidates": []
+    },
+    {
+      "frame": 148,
+      "split": "tune",
+      "status": "reviewed",
+      "note": "Ball candidate checked in enlarged crop; one real ball is visible.",
+      "candidates": [
+        {
+          "index": 0,
+          "correct": true,
+          "note": "Visible basketball."
+        }
+      ]
+    },
+    {
+      "frame": 222,
+      "split": "tune",
+      "status": "reviewed",
+      "note": "Ball candidate checked in enlarged crop; one real ball is visible.",
+      "candidates": [
+        {
+          "index": 0,
+          "correct": true,
+          "note": "Visible basketball."
+        }
+      ]
+    },
+    {
+      "frame": 296,
+      "split": "tune",
+      "status": "reviewed",
+      "note": "Ball candidate checked in enlarged crop; one real ball is visible.",
+      "candidates": [
+        {
+          "index": 0,
+          "correct": true,
+          "note": "Visible basketball."
+        }
+      ]
+    },
+    {
+      "frame": 370,
+      "split": "tune",
+      "status": "reviewed",
+      "note": "Ball candidate checked in enlarged crop; one real ball is visible.",
+      "candidates": [
+        {
+          "index": 0,
+          "correct": true,
+          "note": "Visible basketball."
+        },
+        {
+          "index": 1,
+          "correct": false,
+          "note": "Off-ball player arm."
+        }
+      ]
+    },
+    {
+      "frame": 444,
+      "split": "tune",
+      "status": "reviewed",
+      "note": "Ball candidate checked in enlarged crop; one real ball is visible.",
+      "candidates": [
+        {
+          "index": 0,
+          "correct": true,
+          "note": "Visible basketball."
+        }
+      ]
+    },
+    {
+      "frame": 518,
+      "split": "tune",
+      "status": "reviewed",
+      "note": "Ball candidate checked in enlarged crop; one real ball is visible.",
+      "candidates": [
+        {
+          "index": 0,
+          "correct": true,
+          "note": "Visible basketball."
+        }
+      ]
+    },
+    {
+      "frame": 592,
+      "split": "tune",
+      "status": "reviewed",
+      "note": "Ball candidate checked in enlarged crop; one real ball is visible.",
+      "candidates": [
+        {
+          "index": 0,
+          "correct": true,
+          "note": "Visible basketball."
+        }
+      ]
+    },
+    {
+      "frame": 666,
+      "split": "check",
+      "status": "uncertain",
+      "note": "No ball prediction. Visibility unresolved from reviewed frames; not labeled as a miss.",
+      "candidates": []
+    },
+    {
+      "frame": 741,
+      "split": "check",
+      "status": "reviewed",
+      "note": "Ball candidate checked in enlarged crop; one real ball is visible.",
+      "candidates": [
+        {
+          "index": 0,
+          "correct": true,
+          "note": "Visible basketball."
+        }
+      ]
+    },
+    {
+      "frame": 815,
+      "split": "check",
+      "status": "reviewed",
+      "note": "Ball candidate checked in enlarged crop; one real ball is visible.",
+      "candidates": [
+        {
+          "index": 0,
+          "correct": true,
+          "note": "Visible basketball."
+        }
+      ]
+    },
+    {
+      "frame": 889,
+      "split": "check",
+      "status": "reviewed",
+      "note": "Ball candidate checked in enlarged crop; one real ball is visible.",
+      "candidates": [
+        {
+          "index": 0,
+          "correct": true,
+          "note": "Visible basketball."
+        }
+      ]
+    },
+    {
+      "frame": 963,
+      "split": "check",
+      "status": "uncertain",
+      "note": "No ball prediction. Visibility unresolved from reviewed frames; not labeled as a miss.",
+      "candidates": []
+    },
+    {
+      "frame": 1037,
+      "split": "check",
+      "status": "uncertain",
+      "note": "No ball prediction. Visibility unresolved from reviewed frames; not labeled as a miss.",
+      "candidates": []
+    },
+    {
+      "frame": 1111,
+      "split": "check",
+      "status": "uncertain",
+      "note": "No ball prediction. Visibility unresolved from reviewed frames; not labeled as a miss.",
+      "candidates": []
+    },
+    {
+      "frame": 1185,
+      "split": "check",
+      "status": "uncertain",
+      "note": "No ball prediction. Visibility unresolved from reviewed frames; not labeled as a miss.",
+      "candidates": []
+    },
+    {
+      "frame": 1259,
+      "split": "check",
+      "status": "uncertain",
+      "note": "No ball prediction. Visibility unresolved from reviewed frames; not labeled as a miss.",
+      "candidates": []
+    },
+    {
+      "frame": 1333,
+      "split": "check",
+      "status": "uncertain",
+      "note": "Candidate overlaps the spectator area; ball identity not confidently resolved.",
+      "candidates": []
+    },
+    {
+      "frame": 1407,
+      "split": "check",
+      "status": "uncertain",
+      "note": "No ball prediction. Visibility unresolved from reviewed frames; not labeled as a miss.",
+      "candidates": []
+    }
+  ]
+}

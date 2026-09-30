@@ -6,8 +6,8 @@ A learning project for building an app that analyzes basketball practice videos.
 
 The project currently includes a `/health` API and an OpenCV video reader.
 The reader has been verified with the local videos `threemade.mp4` and `threemiss.mp4`.
-The Expo mobile app now has Home and video-selection screens. M1 is **not complete
-yet**: the mobile flow still needs verification on your iPhone. The API, mobile
+The Expo mobile app has Home and video-selection screens. **M1 is complete:** the
+video-selection details card has been confirmed on your iPhone. The API, mobile
 app, and Python script run independently; upload and integration are later work.
 
 ```text
@@ -114,6 +114,22 @@ the backend while trying the mobile app at this stage.
 
 Test the same video on the phone and in Python. Selecting a video on the phone
 does not send it to the computer. Move to M2 only after all parts of M1 work.
+
+## Milestone 2 — Ball and hoop detection
+
+A first local detection pipeline is implemented. Follow [the CV walkthrough](cv/README.md)
+to run it, understand the model, and inspect its predictions. **M2 implementation
+is complete; quality validation is deferred.** The longer representative clip
+and labeled quality review remain on the checklist as we begin M3.
+
+## Milestone 3 — Local shot-analysis prototype
+
+The [M3 walkthrough](cv/M3.md) provides one command for detection, optional
+near-hoop recovery, tracking, and timestamped shot estimates. Both reviewed short
+clips now produce the expected provisional outcome: one make and one miss.
+The longer clip produces no candidates. Implementation is ready for broader
+validation; the original ten-shot practice-video checkpoint remains pending.
+These two development examples are not a general accuracy claim.
 
 ## Roadmap
 

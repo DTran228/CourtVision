@@ -1,0 +1,83 @@
+{
+  "reviewer": "AI assistant visual review; provisional labels, not human-approved ground truth.",
+  "method": "Overview plus consecutive enlarged hoop frames. Outcomes based on visible motion, not filenames.",
+  "scope": "One attempt window per short clip. Times outside these windows remain unreviewed.",
+  "clips": [
+    {
+      "name": "threemade",
+      "video": "cv/sample_videos/threemade.mp4",
+      "video_sha256": "cc96b2edd39a76f84c38ec2b4a4bbf6ed8d89cf9cd126126a1d5e2774bae493f",
+      "frames": 159,
+      "fps": 29.99056900345803,
+      "reviewed_windows": [
+        [
+          70,
+          145
+        ]
+      ],
+      "attempts": [
+        {
+          "id": 1,
+          "window": [
+            70,
+            145
+          ],
+          "outcome": "made",
+          "evidence_frames": [
+            118,
+            120,
+            122,
+            124,
+            126,
+            128,
+            130,
+            132
+          ],
+          "visible_ball_window": [
+            118,
+            132
+          ],
+          "note": "Ball descends through the net and exits below it."
+        }
+      ]
+    },
+    {
+      "name": "threemiss",
+      "video": "cv/sample_videos/threemiss.mp4",
+      "video_sha256": "9468e5257956835489f11ed509d8ff9b9349eaf59fdc48bb02bf7db4e893321f",
+      "frames": 178,
+      "fps": 29.991575400168493,
+      "reviewed_windows": [
+        [
+          98,
+          170
+        ]
+      ],
+      "attempts": [
+        {
+          "id": 1,
+          "window": [
+            98,
+            170
+          ],
+          "outcome": "missed",
+          "evidence_frames": [
+            132,
+            134,
+            136,
+            138,
+            140,
+            142,
+            144,
+            146
+          ],
+          "visible_ball_window": [
+            132,
+            146
+          ],
+          "note": "Ball approaches the rim, then rebounds upward/left and away."
+        }
+      ]
+    }
+  ]
+}
