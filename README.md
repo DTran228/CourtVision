@@ -1,5 +1,12 @@
 # CourtVision
 
+The integrated local product is now implemented: video upload, durable analysis
+jobs, timestamped estimates, original-video review/corrections and session history.
+Start with [the current runbook](docs/RUNBOOK.md) and
+[milestone results and remaining gates](docs/PROGRESS.md).
+The lessons below are preserved as development history. The current scope defers
+shot charts/player location; GPU speedup and accuracy/impact claims remain unproven.
+
 A learning project for building an app that analyzes basketball practice videos.
 
 ## Lesson 1 — Python foundations for Milestone 1
@@ -127,8 +134,10 @@ and labeled quality review remain on the checklist as we begin M3.
 The [M3 walkthrough](cv/M3.md) provides one command for detection, optional
 near-hoop recovery, tracking, and timestamped shot estimates. Both reviewed short
 clips now produce the expected provisional outcome: one make and one miss.
-The longer clip produces no candidates. Implementation is ready for broader
-validation; the original ten-shot practice-video checkpoint remains pending.
+The earlier `20secplay` clip produces no candidates. A new
+[shootout validation run](cv/experiments/m3-threepointshootout25.md) produced eight
+provisional candidates but missed an early reviewed make; five outcomes remain
+unknown. Broader accuracy validation remains pending.
 These two development examples are not a general accuracy claim.
 
 ## Roadmap

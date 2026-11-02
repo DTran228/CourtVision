@@ -1,0 +1,31 @@
+{
+  "synthetic": false,
+  "transport": "in-process HTTP TestClient; not phone/LAN latency",
+  "input_sha256": "72da54ffb9ad57775c81c62da9d0be3898a712ba01f2a5648eba3bc3c8601aba",
+  "job_id": "2b44e705-0441-47fd-b3a3-9bd2e3bd7839",
+  "status": "succeeded",
+  "upload_validation_seconds": 7.8447947999229655,
+  "upload_to_review_ready_seconds": 107.21578889992088,
+  "automatic_summary": {
+    "candidates": 0,
+    "makes": 0,
+    "misses": 0,
+    "unknown": 0,
+    "review_complete": false,
+    "fg_percent": null
+  },
+  "timings": {
+    "media_validation_seconds": 7.505375699955039,
+    "model_initialization_seconds": 6.184717500000261,
+    "decode_seconds": 12.165796302491799,
+    "inference_seconds": 70.80994479660876,
+    "tracking_classification_seconds": 0.03456840116996318,
+    "artifact_write_seconds": 0.09653669793624431,
+    "encode_seconds": null,
+    "pipeline_seconds": 99.08312039996963
+  },
+  "saved_review_revision": 1,
+  "result_path": "C:\\dev\\CourtVision\\data\\smoke-20secplay-real\\app-data\\jobs\\2b44e705-0441-47fd-b3a3-9bd2e3bd7839\\attempt-1\\result.json",
+  "model_sha256": "dfe3534d51bb21024d1a400c37f0c1fbf0c8b96ea9a56a5f3cb5454813bfd641",
+  "code_sha256": "6a485e24e059e76f08b408720a9b58101806d7af121f90a88dfebebde010b57b"
+}

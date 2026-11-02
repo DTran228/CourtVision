@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "run_id": "bd244254-a6c1-4f6d-be8b-8f6d712fb709",
+  "complete": true,
+  "artifacts": {
+    "detections.jsonl": "6566307529466ccff649e159fe313f2ea23fd1a6e884abd0d14135fb40170a17",
+    "media.json": "3f2304934e682f2fa378884f4c5901d04325f3a42ed38baae5cf0e2483da6585",
+    "result.json": "b4ffad9dd0999c0fa6e1b7b3f2825ef87f203f2a650719eb3f0d0945fa1cbdcf",
+    "states.jsonl": "4030e290c0314a1a97d38612432e226ecbbde59ab22c73691a3652118d2e22de",
+    "tracks.jsonl": "724f2ac780a3ca705680f19e538c02b31ee7b89f016e1c808c18226868a9f36c"
+  }
+}

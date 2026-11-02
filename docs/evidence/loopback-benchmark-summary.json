@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "raw_sha256": {
+    "data\\http-smoke\\runs\\afd13ec6-6d3e-4f91-b5fa-6f3badac86f1-run.json": "f8d4aceee8e921aee1229f968581720ae2e47de3e03d0cb0f011f87ff2929b4d"
+  },
+  "runs": 1,
+  "cache_hits_excluded": 0,
+  "groups": [
+    {
+      "group": {
+        "runner": "local",
+        "observed_temperature": "unclassified",
+        "clip_sha256": "00eab181bfd4f924f42176028306823050baea6ec15c09911f49b8e272a319c6",
+        "config_sha256": "7d722584999fecaf3f81d8bd159a90321b6067e1bd1790a8870c46b14b6b43ed",
+        "model_sha256": "dfe3534d51bb21024d1a400c37f0c1fbf0c8b96ea9a56a5f3cb5454813bfd641",
+        "code_sha256": "6a485e24e059e76f08b408720a9b58101806d7af121f90a88dfebebde010b57b",
+        "hardware": "local CPU; see server runtime metadata"
+      },
+      "attempted": 1,
+      "succeeded": 1,
+      "failed": 0,
+      "error_rate": 0.0,
+      "timings": {
+        "client_total_seconds": {
+          "n": 1,
+          "median": 14.252696400042623,
+          "min": 14.252696400042623,
+          "max": 14.252696400042623,
+          "p95": null,
+          "p95_bootstrap_95pct_interval": null,
+          "p95_note": "Suppressed below 100 runs; exploratory bootstrap interval assumes independent repeats, not a strong tail-latency guarantee"
+        },
+        "client_review_ready_seconds": {
+          "n": 1,
+          "median": 14.215980999986641,
+          "min": 14.215980999986641,
+          "max": 14.215980999986641,
+          "p95": null,
+          "p95_bootstrap_95pct_interval": null,
+          "p95_note": "Suppressed below 100 runs; exploratory bootstrap interval assumes independent repeats, not a strong tail-latency guarantee"
+        },
+        "compute_pipeline_seconds": {
+          "n": 1,
+          "median": 13.215580699965358,
+          "min": 13.215580699965358,
+          "max": 13.215580699965358,
+          "p95": null,
+          "p95_bootstrap_95pct_interval": null,
+          "p95_note": "Suppressed below 100 runs; exploratory bootstrap interval assumes independent repeats, not a strong tail-latency guarantee"
+        },
+        "model_inference_seconds": {
+          "n": 1,
+          "median": 7.064286800217815,
+          "min": 7.064286800217815,
+          "max": 7.064286800217815,
+          "p95": null,
+          "p95_bootstrap_95pct_interval": null,
+          "p95_note": "Suppressed below 100 runs; exploratory bootstrap interval assumes independent repeats, not a strong tail-latency guarantee"
+        }
+      }
+    }
+  ],
+  "input_failure_summary": [
+    {
+      "group": [
+        "local",
+        "unclassified",
+        "00eab181bfd4f924f42176028306823050baea6ec15c09911f49b8e272a319c6",
+        "7d722584999fecaf3f81d8bd159a90321b6067e1bd1790a8870c46b14b6b43ed",
+        "dfe3534d51bb21024d1a400c37f0c1fbf0c8b96ea9a56a5f3cb5454813bfd641",
+        "6a485e24e059e76f08b408720a9b58101806d7af121f90a88dfebebde010b57b"
+      ],
+      "attempted": 1,
+      "failed": 0,
+      "error_rate": 0.0
+    }
+  ],
+  "note": "No speedup ratio without matching quality/parity and temperature. Failures remain in raw counts."
+}

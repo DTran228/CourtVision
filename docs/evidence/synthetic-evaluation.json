@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "split": "dev",
+  "provisional": true,
+  "tolerance_seconds": 0.15,
+  "labels_sha256": "3457d5afd8b2e75adba66a24bf7f8f0776bc8b291bf8946165ed021dc7d794c3",
+  "prediction_sha256": {
+    "C:\\dev\\CourtVision\\data\\demo-synthetic-v2\\app-data\\jobs\\c0a38bec-cd60-4e79-aaca-66cce1e95d35\\attempt-1\\result.json": "d3eaa19a26fd456c1bb1e7e3fd76bf5cd6eb08fae9d9a675a594feb2b29a29fa"
+  },
+  "summary": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "labeled_attempts": 1,
+    "known_outcomes": 1,
+    "correctly_detected_and_classified": 1,
+    "unknown_predictions": 0,
+    "predictions_in_reviewed_intervals": 1,
+    "clips": 1,
+    "recording_sessions": 1,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "correct_over_all_labeled": 1.0,
+    "unknown_rate": 0.0,
+    "count_error_by_recording_session": {
+      "synthetic-demo": 0
+    }
+  },
+  "clips": [
+    {
+      "video_sha256": "00eab181bfd4f924f42176028306823050baea6ec15c09911f49b8e272a319c6",
+      "recording_session_id": "synthetic-demo",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "labeled_attempts": 1,
+      "known_outcomes": 1,
+      "predictions_in_reviewed_intervals": 1,
+      "predictions_excluded": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion": {
+        "made": {
+          "made": 1,
+          "missed": 0,
+          "unknown": 0
+        },
+        "missed": {
+          "made": 0,
+          "missed": 0,
+          "unknown": 0
+        },
+        "unknown": {
+          "made": 0,
+          "missed": 0,
+          "unknown": 0
+        }
+      },
+      "correctly_detected_and_classified": 1,
+      "correct_over_all_labeled": 1.0,
+      "correct_over_known_outcomes": 1.0,
+      "unknown_predictions": 0,
+      "unknown_rate": 0.0,
+      "false_positives_per_minute": 0.0,
+      "reviewed_minutes": 0.020000000000000004,
+      "fully_reviewed": true,
+      "count_error": 0,
+      "matches": [
+        {
+          "attempt_id": "scripted-shot",
+          "event_id": "1",
+          "timestamp_window_error_seconds": 0,
+          "timestamp_midpoint_error_seconds": 0.003333333333333327
+        }
+      ],
+      "missed_attempts": [],
+      "false_positive_events": []
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "typecheck": "passed",
+  "ios_export": "passed",
+  "command": "npx expo export --platform ios --output-dir ../data/mobile-ios-export-final",
+  "native_device_test": false,
+  "artifacts_sha256": {
+    "metadata.json": "1fd43c1f226015b6b2e488b28773c49a4bae56568ea69f2dd0542a485d27eac3",
+    "_expo\\static\\js\\ios\\index-e6db650237b7d69f1541cb1b18af5fca.hbc": "70b7429318d651a1ae7d99f94892295b0698dfa3aed9631ba98cf41ecb244dfe"
+  }
+}

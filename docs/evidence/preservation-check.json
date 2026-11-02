@@ -1,0 +1,13 @@
+{
+  "cv\\experiments\\20secplay-review.json": true,
+  "cv\\experiments\\m2-20secplay.md": true,
+  "cv\\experiments\\m2-baseline.md": true,
+  "cv\\experiments\\m2-threshold-review.md": true,
+  "cv\\experiments\\m3-reviewed-attempts.md": true,
+  "cv\\experiments\\m3-shot-baseline.md": true,
+  "cv\\experiments\\m3-threepointshootout25.md": true,
+  "cv\\experiments\\m3-tracking-baseline.md": true,
+  "cv\\experiments\\shot-review.json": true,
+  "cv\\experiments\\threepointshootout25-review.json": true,
+  "cv\\M3.md": true
+}

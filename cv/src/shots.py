@@ -10,13 +10,14 @@ import math
 class ShotAnalyzer:
     """Remember one near-hoop event, then pause briefly to avoid duplicates."""
 
-    def __init__(self, fps, max_gap_seconds=0):
+    def __init__(self, fps, max_gap_seconds=0, time_aware=False):
         if not math.isfinite(fps) or fps <= 0:
             raise ValueError("FPS must be positive and finite.")
         if not math.isfinite(max_gap_seconds) or max_gap_seconds < 0:
             raise ValueError("Gap allowance must be nonnegative and finite.")
         self.max_gap = math.floor(max_gap_seconds*fps)
         self.fps = fps
+        self.time_aware = time_aware
         self.lowest_y = -float("inf")
         self.upward_steps = 0
         self.previous = None
@@ -83,6 +84,8 @@ class ShotAnalyzer:
         # Start from two observed above-hoop points, allowing only bounded gaps.
         # Image y increases DOWN, so a positive delta means descending.
         vertical_step = (point["y"]-previous["y"])/elapsed
+        if self.time_aware:
+            vertical_step *= self.fps/30  # Compare speed per 1/30 second, not per input frame.
         descending = vertical_step > 0.02
         above = -3 <= previous["y"] <= -0.15 and abs(previous["x"]) <= 2
         near = abs(point["x"]) <= 2 and -3 <= point["y"] <= 1
@@ -100,7 +103,8 @@ class ShotAnalyzer:
 
         self.lowest_y = max(self.lowest_y, point["y"])
         self.upward_steps = self.upward_steps+1 if vertical_step < -0.02 else 0
-        if (self.crossing is not None and self.upward_steps >= 2
+        rebound_steps = max(2, math.ceil(self.fps/15)) if self.time_aware else 2
+        if (self.crossing is not None and self.upward_steps >= rebound_steps
                 and -0.05 <= self.lowest_y <= 0.5 and self.lowest_y-point["y"] >= 0.3
                 and point["y"] < 0 and abs(point["x"]) <= 2):
             self.active["evidence"].append(point)

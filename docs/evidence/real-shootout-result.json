@@ -1,0 +1,702 @@
+{
+  "schema_version": 1,
+  "run_id": "bd244254-a6c1-4f6d-be8b-8f6d712fb709",
+  "video_sha256": "93c3d140ca3edd91f988855d5f0f90749eef5353c31302794e0968ba15a3a798",
+  "model_sha256": "dfe3534d51bb21024d1a400c37f0c1fbf0c8b96ea9a56a5f3cb5454813bfd641",
+  "code_sha256": "6a485e24e059e76f08b408720a9b58101806d7af121f90a88dfebebde010b57b",
+  "config_sha256": "7d722584999fecaf3f81d8bd159a90321b6067e1bd1790a8870c46b14b6b43ed",
+  "settings": {
+    "confidence": 0.25,
+    "image_size": 704,
+    "tracker": "baseline",
+    "recovery": false
+  },
+  "device": "cpu",
+  "timebase": {
+    "fps": 60.0,
+    "width": 1920,
+    "height": 1080,
+    "frames": 3772,
+    "duration_seconds": 62.86666666666667,
+    "source_start_seconds": 0.0,
+    "constant_frame_rate": true,
+    "zero_start": true,
+    "mapping": "decoded presentation timestamps; no transforms"
+  },
+  "events": [
+    {
+      "id": "1",
+      "start_seconds": 5.933,
+      "contact_seconds": 6.117,
+      "end_seconds": 6.25,
+      "outcome": "missed",
+      "automatic_estimate": true,
+      "reason": "Observed descent passes outside the hoop proxy and continues below it.",
+      "uncertainty_reason": null,
+      "evidence": [
+        {
+          "frame": 356,
+          "timestamp_seconds": 5.933,
+          "track_id": 7,
+          "ball_center": [
+            1103.07,
+            99.14
+          ],
+          "hoop_bbox": [
+            991.27,
+            137.42,
+            1069.93,
+            221.27
+          ],
+          "source": "model",
+          "x": 0.9213068904144412,
+          "y": -0.4866514111365363,
+          "status": "observed",
+          "reference": "tracks.jsonl#356"
+        },
+        {
+          "frame": 357,
+          "timestamp_seconds": 5.95,
+          "track_id": 7,
+          "ball_center": [
+            1110.4099999999999,
+            103.975
+          ],
+          "hoop_bbox": [
+            991.49,
+            137.75,
+            1071.52,
+            222.15
+          ],
+          "source": "model",
+          "x": 0.9859427714606994,
+          "y": -0.42202923903536194,
+          "status": "observed",
+          "reference": "tracks.jsonl#357"
+        },
+        {
+          "frame": 366,
+          "timestamp_seconds": 6.1,
+          "track_id": 7,
+          "ball_center": [
+            1142.01,
+            132.13
+          ],
+          "hoop_bbox": [
+            1003.88,
+            138.65,
+            1079.47,
+            222.0
+          ],
+          "source": "model",
+          "x": 1.3273581161529302,
+          "y": -0.08625479560788474,
+          "status": "observed",
+          "reference": "tracks.jsonl#366"
+        },
+        {
+          "frame": 367,
+          "timestamp_seconds": 6.117,
+          "track_id": 7,
+          "ball_center": [
+            1146.6399999999999,
+            140.16
+          ],
+          "hoop_bbox": [
+            1002.88,
+            137.83,
+            1079.63,
+            222.01
+          ],
+          "source": "model",
+          "x": 1.3730944625407115,
+          "y": 0.03035830618892483,
+          "status": "observed",
+          "reference": "tracks.jsonl#367"
+        },
+        {
+          "frame": 375,
+          "timestamp_seconds": 6.25,
+          "track_id": 7,
+          "ball_center": [
+            1162.575,
+            187.57
+          ],
+          "hoop_bbox": [
+            995.03,
+            138.69,
+            1076.25,
+            222.28
+          ],
+          "source": "model",
+          "x": 1.5628539768529934,
+          "y": 0.60182221127801,
+          "status": "observed",
+          "reference": "tracks.jsonl#375"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "start_seconds": 11.533,
+      "contact_seconds": 11.683,
+      "end_seconds": 11.817,
+      "outcome": "missed",
+      "automatic_estimate": true,
+      "reason": "Observed descent passes outside the hoop proxy and continues below it.",
+      "uncertainty_reason": null,
+      "evidence": [
+        {
+          "frame": 692,
+          "timestamp_seconds": 11.533,
+          "track_id": 14,
+          "ball_center": [
+            1100.0700000000002,
+            106.635
+          ],
+          "hoop_bbox": [
+            979.07,
+            130.3,
+            1056.9,
+            213.37
+          ],
+          "source": "model",
+          "x": 1.054670435564692,
+          "y": -0.30406013105486307,
+          "status": "observed",
+          "reference": "tracks.jsonl#692"
+        },
+        {
+          "frame": 693,
+          "timestamp_seconds": 11.55,
+          "track_id": 14,
+          "ball_center": [
+            1106.0149999999999,
+            111.08
+          ],
+          "hoop_bbox": [
+            974.85,
+            130.38,
+            1053.22,
+            212.86
+          ],
+          "source": "model",
+          "x": 1.1736633916039274,
+          "y": -0.24626770447875457,
+          "status": "observed",
+          "reference": "tracks.jsonl#693"
+        },
+        {
+          "frame": 700,
+          "timestamp_seconds": 11.667,
+          "track_id": 14,
+          "ball_center": [
+            1124.38,
+            127.75999999999999
+          ],
+          "hoop_bbox": [
+            973.49,
+            131.41,
+            1050.36,
+            212.78
+          ],
+          "source": "model",
+          "x": 1.4629244178483194,
+          "y": -0.04748276310654365,
+          "status": "observed",
+          "reference": "tracks.jsonl#700"
+        },
+        {
+          "frame": 701,
+          "timestamp_seconds": 11.683,
+          "track_id": 14,
+          "ball_center": [
+            1131.21,
+            138.32500000000002
+          ],
+          "hoop_bbox": [
+            973.91,
+            133.03,
+            1050.84,
+            214.94
+          ],
+          "source": "model",
+          "x": 1.5447159755622009,
+          "y": 0.06882880540751357,
+          "status": "observed",
+          "reference": "tracks.jsonl#701"
+        },
+        {
+          "frame": 709,
+          "timestamp_seconds": 11.817,
+          "track_id": 14,
+          "ball_center": [
+            1153.44,
+            183.365
+          ],
+          "hoop_bbox": [
+            972.06,
+            134.09,
+            1047.42,
+            215.81
+          ],
+          "source": "model",
+          "x": 1.9068471337579591,
+          "y": 0.6538614649681518,
+          "status": "observed",
+          "reference": "tracks.jsonl#709"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "start_seconds": 14.8,
+      "contact_seconds": 15.217,
+      "end_seconds": 15.517,
+      "outcome": "made",
+      "automatic_estimate": true,
+      "reason": "Observed descent crosses the hoop proxy and continues below it.",
+      "uncertainty_reason": null,
+      "evidence": [
+        {
+          "frame": 888,
+          "timestamp_seconds": 14.8,
+          "track_id": 18,
+          "ball_center": [
+            940.095,
+            15.67
+          ],
+          "hoop_bbox": [
+            945.68,
+            133.54,
+            1021.36,
+            219.69
+          ],
+          "source": "model",
+          "x": -0.5737975687103584,
+          "y": -1.55747885835095,
+          "status": "observed",
+          "reference": "tracks.jsonl#888"
+        },
+        {
+          "frame": 893,
+          "timestamp_seconds": 14.883,
+          "track_id": 18,
+          "ball_center": [
+            957.99,
+            43.32
+          ],
+          "hoop_bbox": [
+            945.86,
+            139.25,
+            1023.03,
+            222.94
+          ],
+          "source": "model",
+          "x": -0.342814565245561,
+          "y": -1.2430996501231055,
+          "status": "observed",
+          "reference": "tracks.jsonl#893"
+        },
+        {
+          "frame": 905,
+          "timestamp_seconds": 15.083,
+          "track_id": 18,
+          "ball_center": [
+            975.775,
+            107.675
+          ],
+          "hoop_bbox": [
+            947.19,
+            140.91,
+            1021.63,
+            224.41
+          ],
+          "source": "model",
+          "x": -0.11599946265448834,
+          "y": -0.4464669532509407,
+          "status": "observed",
+          "reference": "tracks.jsonl#905"
+        },
+        {
+          "frame": 913,
+          "timestamp_seconds": 15.217,
+          "track_id": 18,
+          "ball_center": [
+            975.9100000000001,
+            167.065
+          ],
+          "hoop_bbox": [
+            942.8,
+            134.73,
+            1015.6,
+            217.68
+          ],
+          "source": "model",
+          "x": -0.04519230769230715,
+          "y": 0.4441620879120876,
+          "status": "observed",
+          "reference": "tracks.jsonl#913"
+        },
+        {
+          "frame": 931,
+          "timestamp_seconds": 15.517,
+          "track_id": 18,
+          "ball_center": [
+            938.725,
+            208.32999999999998
+          ],
+          "hoop_bbox": [
+            929.03,
+            137.75,
+            1008.83,
+            225.04
+          ],
+          "source": "model",
+          "x": -0.37850877192982474,
+          "y": 0.8844611528822045,
+          "status": "observed",
+          "reference": "tracks.jsonl#931"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "start_seconds": 18.15,
+      "contact_seconds": 18.15,
+      "end_seconds": 18.8,
+      "outcome": "unknown",
+      "automatic_estimate": true,
+      "reason": "Track changed or hoop reference jumped.",
+      "uncertainty_reason": "Track changed or hoop reference jumped.",
+      "evidence": [
+        {
+          "frame": 1089,
+          "timestamp_seconds": 18.15,
+          "track_id": 20,
+          "ball_center": [
+            891.855,
+            15.36
+          ],
+          "hoop_bbox": [
+            925.86,
+            124.38,
+            993.65,
+            202.18
+          ],
+          "source": "model",
+          "x": -1.0016226582091756,
+          "y": -1.6082017996754692,
+          "status": "observed",
+          "reference": "tracks.jsonl#1089"
+        },
+        {
+          "frame": 1090,
+          "timestamp_seconds": 18.167,
+          "track_id": 20,
+          "ball_center": [
+            895.065,
+            15.605
+          ],
+          "hoop_bbox": [
+            924.49,
+            125.83,
+            994.63,
+            204.97
+          ],
+          "source": "model",
+          "x": -0.9195181066438538,
+          "y": -1.5714998574280015,
+          "status": "observed",
+          "reference": "tracks.jsonl#1090"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "start_seconds": 26.267,
+      "contact_seconds": 26.267,
+      "end_seconds": 26.533,
+      "outcome": "unknown",
+      "automatic_estimate": true,
+      "reason": "Track changed or hoop reference jumped.",
+      "uncertainty_reason": "Track changed or hoop reference jumped.",
+      "evidence": [
+        {
+          "frame": 1576,
+          "timestamp_seconds": 26.267,
+          "track_id": 26,
+          "ball_center": [
+            745.7550000000001,
+            133.525
+          ],
+          "hoop_bbox": [
+            626.01,
+            218.17,
+            706.83,
+            306.01
+          ],
+          "source": "model",
+          "x": 0.9816258351893095,
+          "y": -1.0473273942093533,
+          "status": "observed",
+          "reference": "tracks.jsonl#1576"
+        },
+        {
+          "frame": 1577,
+          "timestamp_seconds": 26.283,
+          "track_id": 26,
+          "ball_center": [
+            732.74,
+            145.97
+          ],
+          "hoop_bbox": [
+            626.87,
+            218.29,
+            708.62,
+            305.98
+          ],
+          "source": "model",
+          "x": 0.7950458715596331,
+          "y": -0.8846483180428134,
+          "status": "observed",
+          "reference": "tracks.jsonl#1577"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "start_seconds": 29.633,
+      "contact_seconds": 30.083,
+      "end_seconds": 30.683,
+      "outcome": "unknown",
+      "automatic_estimate": true,
+      "reason": "Crossing is ambiguous near the hoop edge.",
+      "uncertainty_reason": "Crossing is ambiguous near the hoop edge.",
+      "evidence": [
+        {
+          "frame": 1778,
+          "timestamp_seconds": 29.633,
+          "track_id": 30,
+          "ball_center": [
+            867.6800000000001,
+            85.22
+          ],
+          "hoop_bbox": [
+            671.16,
+            206.17,
+            753.41,
+            295.02
+          ],
+          "source": "model",
+          "x": 1.8893009118541044,
+          "y": -1.4705167173252278,
+          "status": "observed",
+          "reference": "tracks.jsonl#1778"
+        },
+        {
+          "frame": 1779,
+          "timestamp_seconds": 29.65,
+          "track_id": 30,
+          "ball_center": [
+            849.79,
+            95.1
+          ],
+          "hoop_bbox": [
+            671.19,
+            206.06,
+            753.42,
+            295.23
+          ],
+          "source": "model",
+          "x": 1.6719567067980063,
+          "y": -1.3493858689042946,
+          "status": "observed",
+          "reference": "tracks.jsonl#1779"
+        },
+        {
+          "frame": 1796,
+          "timestamp_seconds": 29.933,
+          "track_id": 30,
+          "ball_center": [
+            739.36,
+            201.575
+          ],
+          "hoop_bbox": [
+            677.72,
+            203.9,
+            756.33,
+            291.63
+          ],
+          "source": "model",
+          "x": 0.2841241572319033,
+          "y": -0.029576389772293814,
+          "status": "observed",
+          "reference": "tracks.jsonl#1796"
+        },
+        {
+          "frame": 1805,
+          "timestamp_seconds": 30.083,
+          "track_id": 30,
+          "ball_center": [
+            696.5450000000001,
+            214.08
+          ],
+          "hoop_bbox": [
+            678.73,
+            200.99,
+            755.8,
+            288.78
+          ],
+          "source": "model",
+          "x": -0.26884650317892733,
+          "y": 0.16984559491371498,
+          "status": "observed",
+          "reference": "tracks.jsonl#1805"
+        },
+        {
+          "frame": 1841,
+          "timestamp_seconds": 30.683,
+          "track_id": 30,
+          "ball_center": [
+            790.3,
+            250.38
+          ],
+          "hoop_bbox": [
+            671.92,
+            199.4,
+            753.45,
+            291.95
+          ],
+          "source": "model",
+          "x": 0.9519808659389173,
+          "y": 0.625291303814546,
+          "status": "observed",
+          "reference": "tracks.jsonl#1841"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "start_seconds": 33.333,
+      "contact_seconds": 33.333,
+      "end_seconds": 33.75,
+      "outcome": "unknown",
+      "automatic_estimate": true,
+      "reason": "Track changed or hoop reference jumped.",
+      "uncertainty_reason": "Track changed or hoop reference jumped.",
+      "evidence": [
+        {
+          "frame": 2000,
+          "timestamp_seconds": 33.333,
+          "track_id": 32,
+          "ball_center": [
+            864.485,
+            91.30000000000001
+          ],
+          "hoop_bbox": [
+            677.99,
+            200.14,
+            756.92,
+            288.71
+          ],
+          "source": "model",
+          "x": 1.8627898137590293,
+          "y": -1.3789433675408596,
+          "status": "observed",
+          "reference": "tracks.jsonl#2000"
+        },
+        {
+          "frame": 2003,
+          "timestamp_seconds": 33.383,
+          "track_id": 32,
+          "ball_center": [
+            827.99,
+            111.05
+          ],
+          "hoop_bbox": [
+            677.62,
+            202.52,
+            755.35,
+            289.33
+          ],
+          "source": "model",
+          "x": 1.434516917535057,
+          "y": -1.1767657275183325,
+          "status": "observed",
+          "reference": "tracks.jsonl#2003"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "start_seconds": 54.7,
+      "contact_seconds": 54.7,
+      "end_seconds": 55.0,
+      "outcome": "unknown",
+      "automatic_estimate": true,
+      "reason": "Track changed or hoop reference jumped.",
+      "uncertainty_reason": "Track changed or hoop reference jumped.",
+      "evidence": [
+        {
+          "frame": 3282,
+          "timestamp_seconds": 54.7,
+          "track_id": 47,
+          "ball_center": [
+            794.9649999999999,
+            105.25
+          ],
+          "hoop_bbox": [
+            658.61,
+            211.48,
+            739.8,
+            298.4
+          ],
+          "source": "model",
+          "x": 1.1794555979800476,
+          "y": -1.3084123660549336,
+          "status": "observed",
+          "reference": "tracks.jsonl#3282"
+        },
+        {
+          "frame": 3283,
+          "timestamp_seconds": 54.717,
+          "track_id": 47,
+          "ball_center": [
+            784.0150000000001,
+            121.58
+          ],
+          "hoop_bbox": [
+            659.02,
+            212.83,
+            739.37,
+            298.21
+          ],
+          "source": "model",
+          "x": 1.0556316116988194,
+          "y": -1.1356565028002488,
+          "status": "observed",
+          "reference": "tracks.jsonl#3283"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "candidates": 8,
+    "makes": 1,
+    "misses": 2,
+    "unknown": 5,
+    "review_complete": false,
+    "fg_percent": null
+  },
+  "timings": {
+    "media_validation_seconds": 18.460636899922974,
+    "model_initialization_seconds": 3.8337608000729233,
+    "decode_seconds": 25.151842800551094,
+    "inference_seconds": 163.0390550965676,
+    "tracking_classification_seconds": 0.100886698695831,
+    "artifact_write_seconds": 0.30920349922962487,
+    "encode_seconds": null,
+    "pipeline_seconds": 217.534452999942
+  }
+}

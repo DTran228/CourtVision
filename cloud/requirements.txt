@@ -1,0 +1,2 @@
+# Optional server-side cloud tooling. Local product does not import Modal.
+modal==1.6.3

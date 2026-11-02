@@ -12,12 +12,13 @@ DEFAULT_WEIGHTS = Path(__file__).resolve().parents[1] / "models" / "ebard-yolov8
 class Detector:
     """Keep the loaded model and its settings together between frames."""
 
-    def __init__(self, weights=DEFAULT_WEIGHTS, confidence=0.25, image_size=704):
+    def __init__(self, weights=DEFAULT_WEIGHTS, confidence=0.25, image_size=704, device="cpu"):
         if not Path(weights).is_file():
             raise ValueError("Model weights not found. Follow cv/models/README.md first.")
         self.model = YOLO(str(weights))
         self.confidence = confidence
         self.image_size = image_size
+        self.device = device
 
         # Read class IDs from the model instead of assuming what 0 or 1 means.
         self.labels = {}
@@ -37,7 +38,7 @@ class Detector:
             conf=self.confidence,
             imgsz=self.image_size,
             classes=list(self.labels),
-            device="cpu",  # Runs on this laptop without installing CUDA.
+            device=self.device,  # CPU remains the default; cloud explicitly selects CUDA.
             verbose=False,
             stream=False,  # Return a list instead of yielding results one at a time.
         )

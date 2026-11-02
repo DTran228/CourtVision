@@ -1,5 +1,12 @@
 # CourtVision mobile: Lesson 2
 
+## Current integrated workflow
+
+See [the current runbook](../docs/RUNBOOK.md) for API + worker startup, LAN URL,
+upload/status, video seeking, corrections and history. This app uses expo-video
+~57.0.5 with SDK 57. Native device playback/upload still needs a phone walk-through.
+The learning notes below preserve the original selection-only milestone.
+
 This is the mobile part of Milestone 1. It uses React Native, Expo SDK 57, and
 TypeScript. The flow is **Home -> Choose video -> View video details**.
 

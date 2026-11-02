@@ -1,0 +1,65 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "python": "3.12.14",
+  "versions": {
+    "torch": "2.14.0",
+    "torchvision": "0.29.0",
+    "ultralytics": "8.4.164",
+    "opencv-python": "4.14.0.94",
+    "numpy": "2.5.3",
+    "av": "16.1.0",
+    "fastapi": "0.141.1",
+    "starlette": "1.7.0",
+    "uvicorn": "0.54.0",
+    "modal": "1.6.3"
+  },
+  "sources": {
+    "20secplay_smoke": {
+      "file": "docs\\evidence\\real-20secplay-smoke.json",
+      "sha256": "246e17e829f11b5e04847b16d791ba4309261aed8b4b4a9782bdc4546f60b61d",
+      "source": "data\\smoke-20secplay-real\\demo.json"
+    },
+    "20secplay_result": {
+      "file": "docs\\evidence\\real-20secplay-result.json",
+      "sha256": "884b30e62ea69cba54714e9e68527d72a5ab61717054a462b4c4a27582d42fef",
+      "source": "C:\\dev\\CourtVision\\data\\smoke-20secplay-real\\app-data\\jobs\\2b44e705-0441-47fd-b3a3-9bd2e3bd7839\\attempt-1\\result.json"
+    },
+    "20secplay_manifest": {
+      "file": "docs\\evidence\\real-20secplay-manifest.json",
+      "sha256": "d12b93fe75d09a91827a3e3932749e803a71b1bc9e4b5a770dcd911af0bf041b",
+      "source": "C:\\dev\\CourtVision\\data\\smoke-20secplay-real\\app-data\\jobs\\2b44e705-0441-47fd-b3a3-9bd2e3bd7839\\attempt-1\\manifest.json"
+    },
+    "shootout_smoke": {
+      "file": "docs\\evidence\\real-shootout-smoke.json",
+      "sha256": "0aa1af3321dab1748193c39387a8d4d9943e31245b5a0bfc9e1c27b34cd97181",
+      "source": "data\\smoke-shootout-real\\demo.json"
+    },
+    "shootout_result": {
+      "file": "docs\\evidence\\real-shootout-result.json",
+      "sha256": "b4ffad9dd0999c0fa6e1b7b3f2825ef87f203f2a650719eb3f0d0945fa1cbdcf",
+      "source": "C:\\dev\\CourtVision\\data\\smoke-shootout-real\\app-data\\jobs\\511d7023-e12c-4c9d-9432-410d0525c1b1\\attempt-1\\result.json"
+    },
+    "shootout_manifest": {
+      "file": "docs\\evidence\\real-shootout-manifest.json",
+      "sha256": "d83ceddcab1fe52766407bd1f759a33ff4a4db697e723ab0c6bb2e48a9eac87e",
+      "source": "C:\\dev\\CourtVision\\data\\smoke-shootout-real\\app-data\\jobs\\511d7023-e12c-4c9d-9432-410d0525c1b1\\attempt-1\\manifest.json"
+    },
+    "http_smoke": {
+      "file": "docs\\evidence\\loopback-smoke.json",
+      "sha256": "f8911f7ac2351c07f887ac0f8ff8747f9404843bcf3baaec21c2bfcec58c91f9",
+      "source": "data\\http-smoke\\http-smoke.json"
+    },
+    "http_summary": {
+      "file": "docs\\evidence\\loopback-benchmark-summary.json",
+      "sha256": "b56558e3349b4b69a6790345a21cb46f9f17ebb100a79e87a6c9484b208127b5",
+      "source": "data\\http-smoke-summary\\summary.json"
+    },
+    "http_csv": {
+      "file": "docs\\evidence\\loopback-runs.csv",
+      "sha256": "94b40100b464a6f8ee443b88522d791b7ba3a237b0445e3e6763efb50e9085bb",
+      "source": "data\\http-smoke-summary\\runs.csv"
+    }
+  },
+  "note": "Single uncontrolled local smoke runs. No phone latency, held-out accuracy, GPU speedup or user impact is established."
+}

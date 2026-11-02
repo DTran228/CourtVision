@@ -1,0 +1,31 @@
+{
+  "synthetic": false,
+  "transport": "in-process HTTP TestClient; not phone/LAN latency",
+  "input_sha256": "93c3d140ca3edd91f988855d5f0f90749eef5353c31302794e0968ba15a3a798",
+  "job_id": "511d7023-e12c-4c9d-9432-410d0525c1b1",
+  "status": "succeeded",
+  "upload_validation_seconds": 16.950902799959294,
+  "upload_to_review_ready_seconds": 234.82917629997246,
+  "automatic_summary": {
+    "candidates": 8,
+    "makes": 1,
+    "misses": 2,
+    "unknown": 5,
+    "review_complete": false,
+    "fg_percent": null
+  },
+  "timings": {
+    "media_validation_seconds": 18.460636899922974,
+    "model_initialization_seconds": 3.8337608000729233,
+    "decode_seconds": 25.151842800551094,
+    "inference_seconds": 163.0390550965676,
+    "tracking_classification_seconds": 0.100886698695831,
+    "artifact_write_seconds": 0.30920349922962487,
+    "encode_seconds": null,
+    "pipeline_seconds": 217.534452999942
+  },
+  "saved_review_revision": 1,
+  "result_path": "C:\\dev\\CourtVision\\data\\smoke-shootout-real\\app-data\\jobs\\511d7023-e12c-4c9d-9432-410d0525c1b1\\attempt-1\\result.json",
+  "model_sha256": "dfe3534d51bb21024d1a400c37f0c1fbf0c8b96ea9a56a5f3cb5454813bfd641",
+  "code_sha256": "6a485e24e059e76f08b408720a9b58101806d7af121f90a88dfebebde010b57b"
+}

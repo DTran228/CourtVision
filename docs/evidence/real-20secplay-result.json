@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "run_id": "e6ecdd1d-362c-4722-9d01-7796d0dc839a",
+  "video_sha256": "72da54ffb9ad57775c81c62da9d0be3898a712ba01f2a5648eba3bc3c8601aba",
+  "model_sha256": "dfe3534d51bb21024d1a400c37f0c1fbf0c8b96ea9a56a5f3cb5454813bfd641",
+  "code_sha256": "6a485e24e059e76f08b408720a9b58101806d7af121f90a88dfebebde010b57b",
+  "config_sha256": "7d722584999fecaf3f81d8bd159a90321b6067e1bd1790a8870c46b14b6b43ed",
+  "settings": {
+    "confidence": 0.25,
+    "image_size": 704,
+    "tracker": "baseline",
+    "recovery": false
+  },
+  "device": "cpu",
+  "timebase": {
+    "fps": 60.0,
+    "width": 1920,
+    "height": 1080,
+    "frames": 1408,
+    "duration_seconds": 23.466666666666665,
+    "source_start_seconds": 0.0,
+    "constant_frame_rate": true,
+    "zero_start": true,
+    "mapping": "decoded presentation timestamps; no transforms"
+  },
+  "events": [],
+  "summary": {
+    "candidates": 0,
+    "makes": 0,
+    "misses": 0,
+    "unknown": 0,
+    "review_complete": false,
+    "fg_percent": null
+  },
+  "timings": {
+    "media_validation_seconds": 7.505375699955039,
+    "model_initialization_seconds": 6.184717500000261,
+    "decode_seconds": 12.165796302491799,
+    "inference_seconds": 70.80994479660876,
+    "tracking_classification_seconds": 0.03456840116996318,
+    "artifact_write_seconds": 0.09653669793624431,
+    "encode_seconds": null,
+    "pipeline_seconds": 99.08312039996963
+  }
+}

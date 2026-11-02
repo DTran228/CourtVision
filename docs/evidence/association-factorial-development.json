@@ -1,0 +1,2991 @@
+{
+  "detections_sha256": "a717fd5e0578cc520424e93117223b94db84cbe374f8a8ad82350df8e0a5c933",
+  "summary_sha256": "89493b5646990731768ffbfd4ae03f64f7f6f62ed6b81df8d53743776a9929ad",
+  "clock": "historical frame/FPS; not validated PTS; development comparison only",
+  "variants": {
+    "baseline": {
+      "observed_frames": 2278,
+      "candidates": [
+        {
+          "candidate_id": 1,
+          "track_id": 7,
+          "start_frame": 356,
+          "start_seconds": 5.9333,
+          "evidence": [
+            {
+              "frame": 356,
+              "timestamp_seconds": 5.9333,
+              "track_id": 7,
+              "ball_center": [
+                1103.07,
+                99.14
+              ],
+              "hoop_bbox": [
+                991.27,
+                137.42,
+                1069.93,
+                221.27
+              ],
+              "source": "model",
+              "x": 0.9213068904144412,
+              "y": -0.4866514111365363
+            },
+            {
+              "frame": 357,
+              "timestamp_seconds": 5.95,
+              "track_id": 7,
+              "ball_center": [
+                1110.4099999999999,
+                103.975
+              ],
+              "hoop_bbox": [
+                991.49,
+                137.75,
+                1071.52,
+                222.15
+              ],
+              "source": "model",
+              "x": 0.9859427714606994,
+              "y": -0.42202923903536194
+            },
+            {
+              "frame": 366,
+              "timestamp_seconds": 6.1,
+              "track_id": 7,
+              "ball_center": [
+                1142.01,
+                132.13
+              ],
+              "hoop_bbox": [
+                1003.88,
+                138.65,
+                1079.47,
+                222.0
+              ],
+              "source": "model",
+              "x": 1.3273581161529302,
+              "y": -0.08625479560788474
+            },
+            {
+              "frame": 367,
+              "timestamp_seconds": 6.1167,
+              "track_id": 7,
+              "ball_center": [
+                1146.6399999999999,
+                140.16
+              ],
+              "hoop_bbox": [
+                1002.88,
+                137.83,
+                1079.63,
+                222.01
+              ],
+              "source": "model",
+              "x": 1.3730944625407115,
+              "y": 0.03035830618892483
+            },
+            {
+              "frame": 375,
+              "timestamp_seconds": 6.25,
+              "track_id": 7,
+              "ball_center": [
+                1162.575,
+                187.57
+              ],
+              "hoop_bbox": [
+                995.03,
+                138.69,
+                1076.25,
+                222.28
+              ],
+              "source": "model",
+              "x": 1.5628539768529934,
+              "y": 0.60182221127801
+            }
+          ],
+          "crossing_x_in_hoop_widths": 1.3611877557795595,
+          "crossing_frame": 367,
+          "crossing_gap_frames": 0,
+          "end_frame": 375,
+          "end_seconds": 6.25,
+          "outcome": "possible_miss",
+          "provisional": true,
+          "reason": "Observed descent passes outside the hoop proxy and continues below it."
+        },
+        {
+          "candidate_id": 2,
+          "track_id": 14,
+          "start_frame": 692,
+          "start_seconds": 11.5333,
+          "evidence": [
+            {
+              "frame": 692,
+              "timestamp_seconds": 11.5333,
+              "track_id": 14,
+              "ball_center": [
+                1100.0700000000002,
+                106.635
+              ],
+              "hoop_bbox": [
+                979.07,
+                130.3,
+                1056.9,
+                213.37
+              ],
+              "source": "model",
+              "x": 1.054670435564692,
+              "y": -0.30406013105486307
+            },
+            {
+              "frame": 693,
+              "timestamp_seconds": 11.55,
+              "track_id": 14,
+              "ball_center": [
+                1106.0149999999999,
+                111.08
+              ],
+              "hoop_bbox": [
+                974.85,
+                130.38,
+                1053.22,
+                212.86
+              ],
+              "source": "model",
+              "x": 1.1736633916039274,
+              "y": -0.24626770447875457
+            },
+            {
+              "frame": 700,
+              "timestamp_seconds": 11.6667,
+              "track_id": 14,
+              "ball_center": [
+                1124.38,
+                127.75999999999999
+              ],
+              "hoop_bbox": [
+                973.49,
+                131.41,
+                1050.36,
+                212.78
+              ],
+              "source": "model",
+              "x": 1.4629244178483194,
+              "y": -0.04748276310654365
+            },
+            {
+              "frame": 701,
+              "timestamp_seconds": 11.6833,
+              "track_id": 14,
+              "ball_center": [
+                1131.21,
+                138.32500000000002
+              ],
+              "hoop_bbox": [
+                973.91,
+                133.03,
+                1050.84,
+                214.94
+              ],
+              "source": "model",
+              "x": 1.5447159755622009,
+              "y": 0.06882880540751357
+            },
+            {
+              "frame": 709,
+              "timestamp_seconds": 11.8167,
+              "track_id": 14,
+              "ball_center": [
+                1153.44,
+                183.365
+              ],
+              "hoop_bbox": [
+                972.06,
+                134.09,
+                1047.42,
+                215.81
+              ],
+              "source": "model",
+              "x": 1.9068471337579591,
+              "y": 0.6538614649681518
+            }
+          ],
+          "crossing_x_in_hoop_widths": 1.4963148123607453,
+          "crossing_frame": 701,
+          "crossing_gap_frames": 0,
+          "end_frame": 709,
+          "end_seconds": 11.8167,
+          "outcome": "possible_miss",
+          "provisional": true,
+          "reason": "Observed descent passes outside the hoop proxy and continues below it."
+        },
+        {
+          "candidate_id": 3,
+          "track_id": 18,
+          "start_frame": 888,
+          "start_seconds": 14.8,
+          "evidence": [
+            {
+              "frame": 888,
+              "timestamp_seconds": 14.8,
+              "track_id": 18,
+              "ball_center": [
+                940.095,
+                15.67
+              ],
+              "hoop_bbox": [
+                945.68,
+                133.54,
+                1021.36,
+                219.69
+              ],
+              "source": "model",
+              "x": -0.5737975687103584,
+              "y": -1.55747885835095
+            },
+            {
+              "frame": 893,
+              "timestamp_seconds": 14.8833,
+              "track_id": 18,
+              "ball_center": [
+                957.99,
+                43.32
+              ],
+              "hoop_bbox": [
+                945.86,
+                139.25,
+                1023.03,
+                222.94
+              ],
+              "source": "model",
+              "x": -0.342814565245561,
+              "y": -1.2430996501231055
+            },
+            {
+              "frame": 905,
+              "timestamp_seconds": 15.0833,
+              "track_id": 18,
+              "ball_center": [
+                975.775,
+                107.675
+              ],
+              "hoop_bbox": [
+                947.19,
+                140.91,
+                1021.63,
+                224.41
+              ],
+              "source": "model",
+              "x": -0.11599946265448834,
+              "y": -0.4464669532509407
+            },
+            {
+              "frame": 913,
+              "timestamp_seconds": 15.2167,
+              "track_id": 18,
+              "ball_center": [
+                975.9100000000001,
+                167.065
+              ],
+              "hoop_bbox": [
+                942.8,
+                134.73,
+                1015.6,
+                217.68
+              ],
+              "source": "model",
+              "x": -0.04519230769230715,
+              "y": 0.4441620879120876
+            },
+            {
+              "frame": 931,
+              "timestamp_seconds": 15.5167,
+              "track_id": 18,
+              "ball_center": [
+                938.725,
+                208.32999999999998
+              ],
+              "hoop_bbox": [
+                929.03,
+                137.75,
+                1008.83,
+                225.04
+              ],
+              "source": "model",
+              "x": -0.37850877192982474,
+              "y": 0.8844611528822045
+            }
+          ],
+          "crossing_x_in_hoop_widths": -0.08050426399910837,
+          "crossing_frame": 913,
+          "crossing_gap_frames": 7,
+          "end_frame": 931,
+          "end_seconds": 15.5167,
+          "outcome": "possible_make",
+          "provisional": true,
+          "reason": "Observed descent crosses the hoop proxy and continues below it."
+        },
+        {
+          "candidate_id": 4,
+          "track_id": 20,
+          "start_frame": 1089,
+          "start_seconds": 18.15,
+          "evidence": [
+            {
+              "frame": 1089,
+              "timestamp_seconds": 18.15,
+              "track_id": 20,
+              "ball_center": [
+                891.855,
+                15.36
+              ],
+              "hoop_bbox": [
+                925.86,
+                124.38,
+                993.65,
+                202.18
+              ],
+              "source": "model",
+              "x": -1.0016226582091756,
+              "y": -1.6082017996754692
+            },
+            {
+              "frame": 1090,
+              "timestamp_seconds": 18.1667,
+              "track_id": 20,
+              "ball_center": [
+                895.065,
+                15.605
+              ],
+              "hoop_bbox": [
+                924.49,
+                125.83,
+                994.63,
+                204.97
+              ],
+              "source": "model",
+              "x": -0.9195181066438538,
+              "y": -1.5714998574280015
+            }
+          ],
+          "end_frame": 1128,
+          "end_seconds": 18.8,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Track changed or hoop reference jumped."
+        },
+        {
+          "candidate_id": 5,
+          "track_id": 26,
+          "start_frame": 1576,
+          "start_seconds": 26.2667,
+          "evidence": [
+            {
+              "frame": 1576,
+              "timestamp_seconds": 26.2667,
+              "track_id": 26,
+              "ball_center": [
+                745.7550000000001,
+                133.525
+              ],
+              "hoop_bbox": [
+                626.01,
+                218.17,
+                706.83,
+                306.01
+              ],
+              "source": "model",
+              "x": 0.9816258351893095,
+              "y": -1.0473273942093533
+            },
+            {
+              "frame": 1577,
+              "timestamp_seconds": 26.2833,
+              "track_id": 26,
+              "ball_center": [
+                732.74,
+                145.97
+              ],
+              "hoop_bbox": [
+                626.87,
+                218.29,
+                708.62,
+                305.98
+              ],
+              "source": "model",
+              "x": 0.7950458715596331,
+              "y": -0.8846483180428134
+            }
+          ],
+          "end_frame": 1592,
+          "end_seconds": 26.5333,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Track changed or hoop reference jumped."
+        },
+        {
+          "candidate_id": 6,
+          "track_id": 30,
+          "start_frame": 1778,
+          "start_seconds": 29.6333,
+          "evidence": [
+            {
+              "frame": 1778,
+              "timestamp_seconds": 29.6333,
+              "track_id": 30,
+              "ball_center": [
+                867.6800000000001,
+                85.22
+              ],
+              "hoop_bbox": [
+                671.16,
+                206.17,
+                753.41,
+                295.02
+              ],
+              "source": "model",
+              "x": 1.8893009118541044,
+              "y": -1.4705167173252278
+            },
+            {
+              "frame": 1779,
+              "timestamp_seconds": 29.65,
+              "track_id": 30,
+              "ball_center": [
+                849.79,
+                95.1
+              ],
+              "hoop_bbox": [
+                671.19,
+                206.06,
+                753.42,
+                295.23
+              ],
+              "source": "model",
+              "x": 1.6719567067980063,
+              "y": -1.3493858689042946
+            },
+            {
+              "frame": 1796,
+              "timestamp_seconds": 29.9333,
+              "track_id": 30,
+              "ball_center": [
+                739.36,
+                201.575
+              ],
+              "hoop_bbox": [
+                677.72,
+                203.9,
+                756.33,
+                291.63
+              ],
+              "source": "model",
+              "x": 0.2841241572319033,
+              "y": -0.029576389772293814
+            },
+            {
+              "frame": 1805,
+              "timestamp_seconds": 30.0833,
+              "track_id": 30,
+              "ball_center": [
+                696.5450000000001,
+                214.08
+              ],
+              "hoop_bbox": [
+                678.73,
+                200.99,
+                755.8,
+                288.78
+              ],
+              "source": "model",
+              "x": -0.26884650317892733,
+              "y": 0.16984559491371498
+            },
+            {
+              "frame": 1841,
+              "timestamp_seconds": 30.6833,
+              "track_id": 30,
+              "ball_center": [
+                790.3,
+                250.38
+              ],
+              "hoop_bbox": [
+                671.92,
+                199.4,
+                753.45,
+                291.95
+              ],
+              "source": "model",
+              "x": 0.9519808659389173,
+              "y": 0.625291303814546
+            }
+          ],
+          "crossing_x_in_hoop_widths": 0.20211275908688783,
+          "crossing_frame": 1805,
+          "crossing_gap_frames": 8,
+          "end_frame": 1841,
+          "end_seconds": 30.6833,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Crossing is ambiguous near the hoop edge."
+        },
+        {
+          "candidate_id": 7,
+          "track_id": 32,
+          "start_frame": 2000,
+          "start_seconds": 33.3333,
+          "evidence": [
+            {
+              "frame": 2000,
+              "timestamp_seconds": 33.3333,
+              "track_id": 32,
+              "ball_center": [
+                864.485,
+                91.30000000000001
+              ],
+              "hoop_bbox": [
+                677.99,
+                200.14,
+                756.92,
+                288.71
+              ],
+              "source": "model",
+              "x": 1.8627898137590293,
+              "y": -1.3789433675408596
+            },
+            {
+              "frame": 2003,
+              "timestamp_seconds": 33.3833,
+              "track_id": 32,
+              "ball_center": [
+                827.99,
+                111.05
+              ],
+              "hoop_bbox": [
+                677.62,
+                202.52,
+                755.35,
+                289.33
+              ],
+              "source": "model",
+              "x": 1.434516917535057,
+              "y": -1.1767657275183325
+            }
+          ],
+          "end_frame": 2025,
+          "end_seconds": 33.75,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Track changed or hoop reference jumped."
+        },
+        {
+          "candidate_id": 8,
+          "track_id": 47,
+          "start_frame": 3282,
+          "start_seconds": 54.7,
+          "evidence": [
+            {
+              "frame": 3282,
+              "timestamp_seconds": 54.7,
+              "track_id": 47,
+              "ball_center": [
+                794.9649999999999,
+                105.25
+              ],
+              "hoop_bbox": [
+                658.61,
+                211.48,
+                739.8,
+                298.4
+              ],
+              "source": "model",
+              "x": 1.1794555979800476,
+              "y": -1.3084123660549336
+            },
+            {
+              "frame": 3283,
+              "timestamp_seconds": 54.7167,
+              "track_id": 47,
+              "ball_center": [
+                784.0150000000001,
+                121.58
+              ],
+              "hoop_bbox": [
+                659.02,
+                212.83,
+                739.37,
+                298.21
+              ],
+              "source": "model",
+              "x": 1.0556316116988194,
+              "y": -1.1356565028002488
+            }
+          ],
+          "end_frame": 3300,
+          "end_seconds": 55.0,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Track changed or hoop reference jumped."
+        }
+      ],
+      "counts": {
+        "possible_make": 1,
+        "possible_miss": 2,
+        "unknown": 5
+      }
+    },
+    "association_only": {
+      "observed_frames": 430,
+      "candidates": [
+        {
+          "candidate_id": 1,
+          "track_id": 21,
+          "start_frame": 354,
+          "start_seconds": 5.9,
+          "evidence": [
+            {
+              "frame": 354,
+              "timestamp_seconds": 5.9,
+              "track_id": 21,
+              "ball_center": [
+                1096.145,
+                97.28
+              ],
+              "hoop_bbox": [
+                991.2,
+                137.05,
+                1068.61,
+                220.89
+              ],
+              "source": "model",
+              "x": 0.8557033974938656,
+              "y": -0.5137579124144178
+            },
+            {
+              "frame": 355,
+              "timestamp_seconds": 5.9167,
+              "track_id": 21,
+              "ball_center": [
+                1102.95,
+                99.215
+              ],
+              "hoop_bbox": [
+                991.33,
+                137.45,
+                1070.05,
+                221.24
+              ],
+              "source": "model",
+              "x": 0.9179369918699196,
+              "y": -0.485708841463415
+            },
+            {
+              "frame": 366,
+              "timestamp_seconds": 6.1,
+              "track_id": 21,
+              "ball_center": [
+                1142.01,
+                132.13
+              ],
+              "hoop_bbox": [
+                1003.88,
+                138.65,
+                1079.47,
+                222.0
+              ],
+              "source": "model",
+              "x": 1.3273581161529302,
+              "y": -0.08625479560788474
+            },
+            {
+              "frame": 367,
+              "timestamp_seconds": 6.1167,
+              "track_id": 21,
+              "ball_center": [
+                1146.6399999999999,
+                140.16
+              ],
+              "hoop_bbox": [
+                1002.88,
+                137.83,
+                1079.63,
+                222.01
+              ],
+              "source": "model",
+              "x": 1.3730944625407115,
+              "y": 0.03035830618892483
+            },
+            {
+              "frame": 375,
+              "timestamp_seconds": 6.25,
+              "track_id": 21,
+              "ball_center": [
+                1162.575,
+                187.57
+              ],
+              "hoop_bbox": [
+                995.03,
+                138.69,
+                1076.25,
+                222.28
+              ],
+              "source": "model",
+              "x": 1.5628539768529934,
+              "y": 0.60182221127801
+            }
+          ],
+          "crossing_x_in_hoop_widths": 1.3611877557795595,
+          "crossing_frame": 367,
+          "crossing_gap_frames": 0,
+          "end_frame": 375,
+          "end_seconds": 6.25,
+          "outcome": "possible_miss",
+          "provisional": true,
+          "reason": "Observed descent passes outside the hoop proxy and continues below it."
+        },
+        {
+          "candidate_id": 2,
+          "track_id": 70,
+          "start_frame": 894,
+          "start_seconds": 14.9,
+          "evidence": [
+            {
+              "frame": 894,
+              "timestamp_seconds": 14.9,
+              "track_id": 70,
+              "ball_center": [
+                957.915,
+                43.43
+              ],
+              "hoop_bbox": [
+                945.87,
+                139.28,
+                1023.03,
+                222.99
+              ],
+              "source": "model",
+              "x": -0.34389580093312716,
+              "y": -1.242223950233282
+            },
+            {
+              "frame": 895,
+              "timestamp_seconds": 14.9167,
+              "track_id": 70,
+              "ball_center": [
+                960.87,
+                52.93000000000001
+              ],
+              "hoop_bbox": [
+                946.34,
+                140.12,
+                1023.2,
+                223.09
+              ],
+              "source": "model",
+              "x": -0.3109549830861303,
+              "y": -1.1344002081706996
+            },
+            {
+              "frame": 905,
+              "timestamp_seconds": 15.0833,
+              "track_id": 70,
+              "ball_center": [
+                975.775,
+                107.675
+              ],
+              "hoop_bbox": [
+                947.19,
+                140.91,
+                1021.63,
+                224.41
+              ],
+              "source": "model",
+              "x": -0.11599946265448834,
+              "y": -0.4464669532509407
+            },
+            {
+              "frame": 913,
+              "timestamp_seconds": 15.2167,
+              "track_id": 70,
+              "ball_center": [
+                975.9100000000001,
+                167.065
+              ],
+              "hoop_bbox": [
+                942.8,
+                134.73,
+                1015.6,
+                217.68
+              ],
+              "source": "model",
+              "x": -0.04519230769230715,
+              "y": 0.4441620879120876
+            },
+            {
+              "frame": 931,
+              "timestamp_seconds": 15.5167,
+              "track_id": 70,
+              "ball_center": [
+                938.725,
+                208.32999999999998
+              ],
+              "hoop_bbox": [
+                929.03,
+                137.75,
+                1008.83,
+                225.04
+              ],
+              "source": "model",
+              "x": -0.37850877192982474,
+              "y": 0.8844611528822045
+            }
+          ],
+          "crossing_x_in_hoop_widths": -0.08050426399910837,
+          "crossing_frame": 913,
+          "crossing_gap_frames": 7,
+          "end_frame": 931,
+          "end_seconds": 15.5167,
+          "outcome": "possible_make",
+          "provisional": true,
+          "reason": "Observed descent crosses the hoop proxy and continues below it."
+        },
+        {
+          "candidate_id": 3,
+          "track_id": 92,
+          "start_frame": 1005,
+          "start_seconds": 16.75,
+          "evidence": [
+            {
+              "frame": 1005,
+              "timestamp_seconds": 16.75,
+              "track_id": 92,
+              "ball_center": [
+                945.22,
+                43.69
+              ],
+              "hoop_bbox": [
+                935.03,
+                124.08,
+                1012.69,
+                207.98
+              ],
+              "source": "model",
+              "x": -0.3687870203450934,
+              "y": -1.0351532320370835
+            },
+            {
+              "frame": 1011,
+              "timestamp_seconds": 16.85,
+              "track_id": 92,
+              "ball_center": [
+                964.69,
+                98.705
+              ],
+              "hoop_bbox": [
+                938.88,
+                124.36,
+                1011.68,
+                205.12
+              ],
+              "source": "model",
+              "x": -0.14546703296703192,
+              "y": -0.3524038461538464
+            }
+          ],
+          "end_frame": 1031,
+          "end_seconds": 17.1833,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 4,
+          "track_id": 101,
+          "start_frame": 1093,
+          "start_seconds": 18.2167,
+          "evidence": [
+            {
+              "frame": 1093,
+              "timestamp_seconds": 18.2167,
+              "track_id": 101,
+              "ball_center": [
+                897.85,
+                16.04
+              ],
+              "hoop_bbox": [
+                922.81,
+                128.01,
+                994.46,
+                207.33
+              ],
+              "source": "model",
+              "x": -0.8483600837404032,
+              "y": -1.5627355198883441
+            },
+            {
+              "frame": 1094,
+              "timestamp_seconds": 18.2333,
+              "track_id": 101,
+              "ball_center": [
+                905.9,
+                18.76
+              ],
+              "hoop_bbox": [
+                922.41,
+                128.48,
+                994.64,
+                208.14
+              ],
+              "source": "model",
+              "x": -0.7285753841893948,
+              "y": -1.5190364114633803
+            }
+          ],
+          "end_frame": 1130,
+          "end_seconds": 18.8333,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 5,
+          "track_id": 117,
+          "start_frame": 1212,
+          "start_seconds": 20.2,
+          "evidence": [
+            {
+              "frame": 1212,
+              "timestamp_seconds": 20.2,
+              "track_id": 117,
+              "ball_center": [
+                899.075,
+                29.005
+              ],
+              "hoop_bbox": [
+                899.24,
+                134.13,
+                975.62,
+                219.32
+              ],
+              "source": "model",
+              "x": -0.5021602513747057,
+              "y": -1.3763419743388323
+            },
+            {
+              "frame": 1213,
+              "timestamp_seconds": 20.2167,
+              "track_id": 117,
+              "ball_center": [
+                904.01,
+                38.660000000000004
+              ],
+              "hoop_bbox": [
+                899.42,
+                134.29,
+                976.2,
+                219.53
+              ],
+              "source": "model",
+              "x": -0.44021880698098353,
+              "y": -1.2455066423547785
+            }
+          ],
+          "end_frame": 1242,
+          "end_seconds": 20.7,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 6,
+          "track_id": 119,
+          "start_frame": 1314,
+          "start_seconds": 21.9,
+          "evidence": [
+            {
+              "frame": 1314,
+              "timestamp_seconds": 21.9,
+              "track_id": 119,
+              "ball_center": [
+                873.4,
+                16.265
+              ],
+              "hoop_bbox": [
+                905.77,
+                143.79,
+                978.66,
+                223.16
+              ],
+              "source": "model",
+              "x": -0.9440938400329257,
+              "y": -1.7495541226505695
+            },
+            {
+              "frame": 1315,
+              "timestamp_seconds": 21.9167,
+              "track_id": 119,
+              "ball_center": [
+                880.79,
+                16.21
+              ],
+              "hoop_bbox": [
+                906.5,
+                142.57,
+                980.61,
+                223.61
+              ],
+              "source": "model",
+              "x": -0.8469167453784926,
+              "y": -1.7050330589664007
+            },
+            {
+              "frame": 1338,
+              "timestamp_seconds": 22.3,
+              "track_id": 119,
+              "ball_center": [
+                904.26,
+                109.38
+              ],
+              "hoop_bbox": [
+                883.31,
+                137.19,
+                959.58,
+                219.23
+              ],
+              "source": "model",
+              "x": -0.22531794939032285,
+              "y": -0.36462567195489665
+            },
+            {
+              "frame": 1349,
+              "timestamp_seconds": 22.4833,
+              "track_id": 119,
+              "ball_center": [
+                896.065,
+                214.31
+              ],
+              "hoop_bbox": [
+                856.77,
+                135.97,
+                932.89,
+                226.37
+              ],
+              "source": "model",
+              "x": 0.016224382553863995,
+              "y": 1.0291644771413557
+            },
+            {
+              "frame": 1351,
+              "timestamp_seconds": 22.5167,
+              "track_id": 119,
+              "ball_center": [
+                896.625,
+                234.18
+              ],
+              "hoop_bbox": [
+                853.5,
+                134.59,
+                928.63,
+                218.18
+              ],
+              "source": "model",
+              "x": 0.0740050578996399,
+              "y": 1.3255690137095701
+            }
+          ],
+          "crossing_x_in_hoop_widths": -0.1621287130854107,
+          "crossing_frame": 1349,
+          "crossing_gap_frames": 10,
+          "end_frame": 1351,
+          "end_seconds": 22.5167,
+          "outcome": "possible_make",
+          "provisional": true,
+          "reason": "Observed descent crosses the hoop proxy and continues below it."
+        },
+        {
+          "candidate_id": 7,
+          "track_id": 159,
+          "start_frame": 1570,
+          "start_seconds": 26.1667,
+          "evidence": [
+            {
+              "frame": 1570,
+              "timestamp_seconds": 26.1667,
+              "track_id": 159,
+              "ball_center": [
+                791.89,
+                103.505
+              ],
+              "hoop_bbox": [
+                628.76,
+                220.44,
+                708.41,
+                306.59
+              ],
+              "source": "model",
+              "x": 1.5480853735091022,
+              "y": -1.4681104833647212
+            },
+            {
+              "frame": 1571,
+              "timestamp_seconds": 26.1833,
+              "track_id": 159,
+              "ball_center": [
+                775.45,
+                112.66499999999999
+              ],
+              "hoop_bbox": [
+                627.77,
+                220.06,
+                708.72,
+                307.12
+              ],
+              "source": "model",
+              "x": 1.3243360098826433,
+              "y": -1.3266831377393447
+            }
+          ],
+          "end_frame": 1594,
+          "end_seconds": 26.5667,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 8,
+          "track_id": 166,
+          "start_frame": 1668,
+          "start_seconds": 27.8,
+          "evidence": [
+            {
+              "frame": 1668,
+              "timestamp_seconds": 27.8,
+              "track_id": 166,
+              "ball_center": [
+                849.365,
+                93.425
+              ],
+              "hoop_bbox": [
+                655.64,
+                215.73,
+                733.69,
+                300.47
+              ],
+              "source": "model",
+              "x": 1.9820627802690571,
+              "y": -1.5670083279948737
+            },
+            {
+              "frame": 1669,
+              "timestamp_seconds": 27.8167,
+              "track_id": 166,
+              "ball_center": [
+                832.175,
+                100.5
+              ],
+              "hoop_bbox": [
+                652.63,
+                213.47,
+                732.96,
+                300.68
+              ],
+              "source": "model",
+              "x": 1.7350927424374432,
+              "y": -1.406323913855346
+            }
+          ],
+          "end_frame": 1694,
+          "end_seconds": 28.2333,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 9,
+          "track_id": 173,
+          "start_frame": 1778,
+          "start_seconds": 29.6333,
+          "evidence": [
+            {
+              "frame": 1778,
+              "timestamp_seconds": 29.6333,
+              "track_id": 173,
+              "ball_center": [
+                867.6800000000001,
+                85.22
+              ],
+              "hoop_bbox": [
+                671.16,
+                206.17,
+                753.41,
+                295.02
+              ],
+              "source": "model",
+              "x": 1.8893009118541044,
+              "y": -1.4705167173252278
+            },
+            {
+              "frame": 1779,
+              "timestamp_seconds": 29.65,
+              "track_id": 173,
+              "ball_center": [
+                849.79,
+                95.1
+              ],
+              "hoop_bbox": [
+                671.19,
+                206.06,
+                753.42,
+                295.23
+              ],
+              "source": "model",
+              "x": 1.6719567067980063,
+              "y": -1.3493858689042946
+            },
+            {
+              "frame": 1796,
+              "timestamp_seconds": 29.9333,
+              "track_id": 173,
+              "ball_center": [
+                739.36,
+                201.575
+              ],
+              "hoop_bbox": [
+                677.72,
+                203.9,
+                756.33,
+                291.63
+              ],
+              "source": "model",
+              "x": 0.2841241572319033,
+              "y": -0.029576389772293814
+            },
+            {
+              "frame": 1805,
+              "timestamp_seconds": 30.0833,
+              "track_id": 173,
+              "ball_center": [
+                696.5450000000001,
+                214.08
+              ],
+              "hoop_bbox": [
+                678.73,
+                200.99,
+                755.8,
+                288.78
+              ],
+              "source": "model",
+              "x": -0.26884650317892733,
+              "y": 0.16984559491371498
+            },
+            {
+              "frame": 1841,
+              "timestamp_seconds": 30.6833,
+              "track_id": 173,
+              "ball_center": [
+                790.3,
+                250.38
+              ],
+              "hoop_bbox": [
+                671.92,
+                199.4,
+                753.45,
+                291.95
+              ],
+              "source": "model",
+              "x": 0.9519808659389173,
+              "y": 0.625291303814546
+            }
+          ],
+          "crossing_x_in_hoop_widths": 0.20211275908688783,
+          "crossing_frame": 1805,
+          "crossing_gap_frames": 8,
+          "end_frame": 1841,
+          "end_seconds": 30.6833,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Crossing is ambiguous near the hoop edge."
+        },
+        {
+          "candidate_id": 10,
+          "track_id": 183,
+          "start_frame": 2000,
+          "start_seconds": 33.3333,
+          "evidence": [
+            {
+              "frame": 2000,
+              "timestamp_seconds": 33.3333,
+              "track_id": 183,
+              "ball_center": [
+                864.485,
+                91.30000000000001
+              ],
+              "hoop_bbox": [
+                677.99,
+                200.14,
+                756.92,
+                288.71
+              ],
+              "source": "model",
+              "x": 1.8627898137590293,
+              "y": -1.3789433675408596
+            },
+            {
+              "frame": 2003,
+              "timestamp_seconds": 33.3833,
+              "track_id": 183,
+              "ball_center": [
+                827.99,
+                111.05
+              ],
+              "hoop_bbox": [
+                677.62,
+                202.52,
+                755.35,
+                289.33
+              ],
+              "source": "model",
+              "x": 1.434516917535057,
+              "y": -1.1767657275183325
+            }
+          ],
+          "end_frame": 2026,
+          "end_seconds": 33.7667,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 11,
+          "track_id": 207,
+          "start_frame": 2236,
+          "start_seconds": 37.2667,
+          "evidence": [
+            {
+              "frame": 2236,
+              "timestamp_seconds": 37.2667,
+              "track_id": 207,
+              "ball_center": [
+                834.155,
+                100.215
+              ],
+              "hoop_bbox": [
+                655.11,
+                207.35,
+                730.5,
+                291.37
+              ],
+              "source": "model",
+              "x": 1.8749170977583225,
+              "y": -1.4210770659238627
+            },
+            {
+              "frame": 2237,
+              "timestamp_seconds": 37.2833,
+              "track_id": 207,
+              "ball_center": [
+                817.335,
+                114.4
+              ],
+              "hoop_bbox": [
+                655.33,
+                207.11,
+                730.54,
+                291.17
+              ],
+              "source": "model",
+              "x": 1.6540353676372852,
+              "y": -1.2326818242255033
+            },
+            {
+              "frame": 2248,
+              "timestamp_seconds": 37.4667,
+              "track_id": 207,
+              "ball_center": [
+                731.2049999999999,
+                201.70499999999998
+              ],
+              "hoop_bbox": [
+                655.31,
+                201.91,
+                737.5,
+                291.23
+              ],
+              "source": "model",
+              "x": 0.4234091738654329,
+              "y": -0.002494220708115493
+            },
+            {
+              "frame": 2251,
+              "timestamp_seconds": 37.5167,
+              "track_id": 207,
+              "ball_center": [
+                724.49,
+                207.26999999999998
+              ],
+              "hoop_bbox": [
+                656.79,
+                197.77,
+                736.64,
+                289.25
+              ],
+              "source": "model",
+              "x": 0.3478396994364444,
+              "y": 0.1189730745147147
+            },
+            {
+              "frame": 2293,
+              "timestamp_seconds": 38.2167,
+              "track_id": 207,
+              "ball_center": [
+                935.095,
+                236.43
+              ],
+              "hoop_bbox": [
+                662.71,
+                189.07,
+                740.12,
+                275.28
+              ],
+              "source": "model",
+              "x": 3.0187314300477994,
+              "y": 0.6118072600439224
+            }
+          ],
+          "crossing_x_in_hoop_widths": 0.4218574232672459,
+          "crossing_frame": 2251,
+          "crossing_gap_frames": 2,
+          "end_frame": 2293,
+          "end_seconds": 38.2167,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Crossing is ambiguous near the hoop edge."
+        },
+        {
+          "candidate_id": 12,
+          "track_id": 278,
+          "start_frame": 2579,
+          "start_seconds": 42.9833,
+          "evidence": [
+            {
+              "frame": 2579,
+              "timestamp_seconds": 42.9833,
+              "track_id": 278,
+              "ball_center": [
+                845.97,
+                74.94
+              ],
+              "hoop_bbox": [
+                661.78,
+                187.18,
+                738.04,
+                273.28
+              ],
+              "source": "model",
+              "x": 1.915289798059272,
+              "y": -1.4718069761342778
+            },
+            {
+              "frame": 2580,
+              "timestamp_seconds": 43.0,
+              "track_id": 278,
+              "ball_center": [
+                826.2750000000001,
+                87.775
+              ],
+              "hoop_bbox": [
+                662.79,
+                188.27,
+                736.74,
+                272.79
+              ],
+              "source": "model",
+              "x": 1.7107505070993918,
+              "y": -1.358958755916159
+            }
+          ],
+          "end_frame": 2603,
+          "end_seconds": 43.3833,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 13,
+          "track_id": 302,
+          "start_frame": 2696,
+          "start_seconds": 44.9333,
+          "evidence": [
+            {
+              "frame": 2696,
+              "timestamp_seconds": 44.9333,
+              "track_id": 302,
+              "ball_center": [
+                807.0899999999999,
+                98.455
+              ],
+              "hoop_bbox": [
+                632.66,
+                197.73,
+                708.8,
+                282.96
+              ],
+              "source": "model",
+              "x": 1.7909114788547402,
+              "y": -1.3038481744155503
+            },
+            {
+              "frame": 2703,
+              "timestamp_seconds": 45.05,
+              "track_id": 302,
+              "ball_center": [
+                724.815,
+                161.565
+              ],
+              "hoop_bbox": [
+                621.8,
+                196.55,
+                701.18,
+                282.78
+              ],
+              "source": "model",
+              "x": 0.7977450239355007,
+              "y": -0.4407281431090957
+            }
+          ],
+          "end_frame": 2719,
+          "end_seconds": 45.3167,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 14,
+          "track_id": 356,
+          "start_frame": 2930,
+          "start_seconds": 48.8333,
+          "evidence": [
+            {
+              "frame": 2930,
+              "timestamp_seconds": 48.8333,
+              "track_id": 356,
+              "ball_center": [
+                754.29,
+                117.94
+              ],
+              "hoop_bbox": [
+                640.05,
+                204.74,
+                713.55,
+                289.87
+              ],
+              "source": "model",
+              "x": 1.0542857142857145,
+              "y": -1.1809523809523812
+            },
+            {
+              "frame": 2931,
+              "timestamp_seconds": 48.85,
+              "track_id": 356,
+              "ball_center": [
+                738.71,
+                134.195
+              ],
+              "hoop_bbox": [
+                632.82,
+                207.96,
+                708.04,
+                291.86
+              ],
+              "source": "model",
+              "x": 0.9077373039085357,
+              "y": -0.9806567402286639
+            }
+          ],
+          "end_frame": 2948,
+          "end_seconds": 49.1333,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 15,
+          "track_id": 376,
+          "start_frame": 3045,
+          "start_seconds": 50.75,
+          "evidence": [
+            {
+              "frame": 3045,
+              "timestamp_seconds": 50.75,
+              "track_id": 376,
+              "ball_center": [
+                758.825,
+                139.09
+              ],
+              "hoop_bbox": [
+                634.27,
+                235.15,
+                707.95,
+                318.7
+              ],
+              "source": "model",
+              "x": 1.1904858849077085,
+              "y": -1.3037459283387611
+            },
+            {
+              "frame": 3046,
+              "timestamp_seconds": 50.7667,
+              "track_id": 376,
+              "ball_center": [
+                744.66,
+                152.38
+              ],
+              "hoop_bbox": [
+                633.76,
+                234.12,
+                707.93,
+                318.35
+              ],
+              "source": "model",
+              "x": 0.9952136982607521,
+              "y": -1.1020628286369158
+            }
+          ],
+          "end_frame": 3063,
+          "end_seconds": 51.05,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 16,
+          "track_id": 387,
+          "start_frame": 3156,
+          "start_seconds": 52.6,
+          "evidence": [
+            {
+              "frame": 3156,
+              "timestamp_seconds": 52.6,
+              "track_id": 387,
+              "ball_center": [
+                793.7,
+                97.89
+              ],
+              "hoop_bbox": [
+                644.08,
+                221.74,
+                719.04,
+                306.82
+              ],
+              "source": "model",
+              "x": 1.4959978655282846,
+              "y": -1.6522145144076859
+            },
+            {
+              "frame": 3157,
+              "timestamp_seconds": 52.6167,
+              "track_id": 387,
+              "ball_center": [
+                783.37,
+                108.56
+              ],
+              "hoop_bbox": [
+                644.69,
+                222.02,
+                720.13,
+                307.47
+              ],
+              "source": "model",
+              "x": 1.3382820784729588,
+              "y": -1.5039766702014858
+            }
+          ],
+          "end_frame": 3180,
+          "end_seconds": 53.0,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 17,
+          "track_id": 395,
+          "start_frame": 3282,
+          "start_seconds": 54.7,
+          "evidence": [
+            {
+              "frame": 3282,
+              "timestamp_seconds": 54.7,
+              "track_id": 395,
+              "ball_center": [
+                794.9649999999999,
+                105.25
+              ],
+              "hoop_bbox": [
+                658.61,
+                211.48,
+                739.8,
+                298.4
+              ],
+              "source": "model",
+              "x": 1.1794555979800476,
+              "y": -1.3084123660549336
+            },
+            {
+              "frame": 3283,
+              "timestamp_seconds": 54.7167,
+              "track_id": 395,
+              "ball_center": [
+                784.0150000000001,
+                121.58
+              ],
+              "hoop_bbox": [
+                659.02,
+                212.83,
+                739.37,
+                298.21
+              ],
+              "source": "model",
+              "x": 1.0556316116988194,
+              "y": -1.1356565028002488
+            }
+          ],
+          "end_frame": 3302,
+          "end_seconds": 55.0333,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 18,
+          "track_id": 407,
+          "start_frame": 3404,
+          "start_seconds": 56.7333,
+          "evidence": [
+            {
+              "frame": 3404,
+              "timestamp_seconds": 56.7333,
+              "track_id": 407,
+              "ball_center": [
+                837.13,
+                97.14
+              ],
+              "hoop_bbox": [
+                685.28,
+                228.08,
+                759.66,
+                310.37
+              ],
+              "source": "model",
+              "x": 1.5415434256520566,
+              "y": -1.760419467598817
+            },
+            {
+              "frame": 3405,
+              "timestamp_seconds": 56.75,
+              "track_id": 407,
+              "ball_center": [
+                825.7349999999999,
+                108.39
+              ],
+              "hoop_bbox": [
+                685.46,
+                227.96,
+                759.62,
+                310.23
+              ],
+              "source": "model",
+              "x": 1.3915183387270764,
+              "y": -1.6123247033441217
+            }
+          ],
+          "end_frame": 3426,
+          "end_seconds": 57.1,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        }
+      ],
+      "counts": {
+        "possible_make": 2,
+        "possible_miss": 1,
+        "unknown": 15
+      }
+    },
+    "association_time_aware": {
+      "observed_frames": 430,
+      "candidates": [
+        {
+          "candidate_id": 1,
+          "track_id": 21,
+          "start_frame": 350,
+          "start_seconds": 5.8333,
+          "evidence": [
+            {
+              "frame": 350,
+              "timestamp_seconds": 5.8333,
+              "track_id": 21,
+              "ball_center": [
+                1077.475,
+                95.355
+              ],
+              "hoop_bbox": [
+                988.53,
+                137.12,
+                1063.47,
+                219.93
+              ],
+              "source": "model",
+              "x": 0.6868828396050156,
+              "y": -0.5573125166800103
+            },
+            {
+              "frame": 353,
+              "timestamp_seconds": 5.8833,
+              "track_id": 21,
+              "ball_center": [
+                1096.1399999999999,
+                97.25
+              ],
+              "hoop_bbox": [
+                991.17,
+                137.04,
+                1068.62,
+                220.92
+              ],
+              "source": "model",
+              "x": 0.855326016785022,
+              "y": -0.5137508069722405
+            },
+            {
+              "frame": 366,
+              "timestamp_seconds": 6.1,
+              "track_id": 21,
+              "ball_center": [
+                1142.01,
+                132.13
+              ],
+              "hoop_bbox": [
+                1003.88,
+                138.65,
+                1079.47,
+                222.0
+              ],
+              "source": "model",
+              "x": 1.3273581161529302,
+              "y": -0.08625479560788474
+            },
+            {
+              "frame": 367,
+              "timestamp_seconds": 6.1167,
+              "track_id": 21,
+              "ball_center": [
+                1146.6399999999999,
+                140.16
+              ],
+              "hoop_bbox": [
+                1002.88,
+                137.83,
+                1079.63,
+                222.01
+              ],
+              "source": "model",
+              "x": 1.3730944625407115,
+              "y": 0.03035830618892483
+            },
+            {
+              "frame": 375,
+              "timestamp_seconds": 6.25,
+              "track_id": 21,
+              "ball_center": [
+                1162.575,
+                187.57
+              ],
+              "hoop_bbox": [
+                995.03,
+                138.69,
+                1076.25,
+                222.28
+              ],
+              "source": "model",
+              "x": 1.5628539768529934,
+              "y": 0.60182221127801
+            }
+          ],
+          "crossing_x_in_hoop_widths": 1.3611877557795595,
+          "crossing_frame": 367,
+          "crossing_gap_frames": 0,
+          "end_frame": 375,
+          "end_seconds": 6.25,
+          "outcome": "possible_miss",
+          "provisional": true,
+          "reason": "Observed descent passes outside the hoop proxy and continues below it."
+        },
+        {
+          "candidate_id": 2,
+          "track_id": 70,
+          "start_frame": 894,
+          "start_seconds": 14.9,
+          "evidence": [
+            {
+              "frame": 894,
+              "timestamp_seconds": 14.9,
+              "track_id": 70,
+              "ball_center": [
+                957.915,
+                43.43
+              ],
+              "hoop_bbox": [
+                945.87,
+                139.28,
+                1023.03,
+                222.99
+              ],
+              "source": "model",
+              "x": -0.34389580093312716,
+              "y": -1.242223950233282
+            },
+            {
+              "frame": 895,
+              "timestamp_seconds": 14.9167,
+              "track_id": 70,
+              "ball_center": [
+                960.87,
+                52.93000000000001
+              ],
+              "hoop_bbox": [
+                946.34,
+                140.12,
+                1023.2,
+                223.09
+              ],
+              "source": "model",
+              "x": -0.3109549830861303,
+              "y": -1.1344002081706996
+            },
+            {
+              "frame": 905,
+              "timestamp_seconds": 15.0833,
+              "track_id": 70,
+              "ball_center": [
+                975.775,
+                107.675
+              ],
+              "hoop_bbox": [
+                947.19,
+                140.91,
+                1021.63,
+                224.41
+              ],
+              "source": "model",
+              "x": -0.11599946265448834,
+              "y": -0.4464669532509407
+            },
+            {
+              "frame": 913,
+              "timestamp_seconds": 15.2167,
+              "track_id": 70,
+              "ball_center": [
+                975.9100000000001,
+                167.065
+              ],
+              "hoop_bbox": [
+                942.8,
+                134.73,
+                1015.6,
+                217.68
+              ],
+              "source": "model",
+              "x": -0.04519230769230715,
+              "y": 0.4441620879120876
+            },
+            {
+              "frame": 931,
+              "timestamp_seconds": 15.5167,
+              "track_id": 70,
+              "ball_center": [
+                938.725,
+                208.32999999999998
+              ],
+              "hoop_bbox": [
+                929.03,
+                137.75,
+                1008.83,
+                225.04
+              ],
+              "source": "model",
+              "x": -0.37850877192982474,
+              "y": 0.8844611528822045
+            }
+          ],
+          "crossing_x_in_hoop_widths": -0.08050426399910837,
+          "crossing_frame": 913,
+          "crossing_gap_frames": 7,
+          "end_frame": 931,
+          "end_seconds": 15.5167,
+          "outcome": "possible_make",
+          "provisional": true,
+          "reason": "Observed descent crosses the hoop proxy and continues below it."
+        },
+        {
+          "candidate_id": 3,
+          "track_id": 92,
+          "start_frame": 1005,
+          "start_seconds": 16.75,
+          "evidence": [
+            {
+              "frame": 1005,
+              "timestamp_seconds": 16.75,
+              "track_id": 92,
+              "ball_center": [
+                945.22,
+                43.69
+              ],
+              "hoop_bbox": [
+                935.03,
+                124.08,
+                1012.69,
+                207.98
+              ],
+              "source": "model",
+              "x": -0.3687870203450934,
+              "y": -1.0351532320370835
+            },
+            {
+              "frame": 1011,
+              "timestamp_seconds": 16.85,
+              "track_id": 92,
+              "ball_center": [
+                964.69,
+                98.705
+              ],
+              "hoop_bbox": [
+                938.88,
+                124.36,
+                1011.68,
+                205.12
+              ],
+              "source": "model",
+              "x": -0.14546703296703192,
+              "y": -0.3524038461538464
+            }
+          ],
+          "end_frame": 1031,
+          "end_seconds": 17.1833,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 4,
+          "track_id": 101,
+          "start_frame": 1093,
+          "start_seconds": 18.2167,
+          "evidence": [
+            {
+              "frame": 1093,
+              "timestamp_seconds": 18.2167,
+              "track_id": 101,
+              "ball_center": [
+                897.85,
+                16.04
+              ],
+              "hoop_bbox": [
+                922.81,
+                128.01,
+                994.46,
+                207.33
+              ],
+              "source": "model",
+              "x": -0.8483600837404032,
+              "y": -1.5627355198883441
+            },
+            {
+              "frame": 1094,
+              "timestamp_seconds": 18.2333,
+              "track_id": 101,
+              "ball_center": [
+                905.9,
+                18.76
+              ],
+              "hoop_bbox": [
+                922.41,
+                128.48,
+                994.64,
+                208.14
+              ],
+              "source": "model",
+              "x": -0.7285753841893948,
+              "y": -1.5190364114633803
+            }
+          ],
+          "end_frame": 1130,
+          "end_seconds": 18.8333,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 5,
+          "track_id": 117,
+          "start_frame": 1212,
+          "start_seconds": 20.2,
+          "evidence": [
+            {
+              "frame": 1212,
+              "timestamp_seconds": 20.2,
+              "track_id": 117,
+              "ball_center": [
+                899.075,
+                29.005
+              ],
+              "hoop_bbox": [
+                899.24,
+                134.13,
+                975.62,
+                219.32
+              ],
+              "source": "model",
+              "x": -0.5021602513747057,
+              "y": -1.3763419743388323
+            },
+            {
+              "frame": 1213,
+              "timestamp_seconds": 20.2167,
+              "track_id": 117,
+              "ball_center": [
+                904.01,
+                38.660000000000004
+              ],
+              "hoop_bbox": [
+                899.42,
+                134.29,
+                976.2,
+                219.53
+              ],
+              "source": "model",
+              "x": -0.44021880698098353,
+              "y": -1.2455066423547785
+            }
+          ],
+          "end_frame": 1242,
+          "end_seconds": 20.7,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 6,
+          "track_id": 119,
+          "start_frame": 1314,
+          "start_seconds": 21.9,
+          "evidence": [
+            {
+              "frame": 1314,
+              "timestamp_seconds": 21.9,
+              "track_id": 119,
+              "ball_center": [
+                873.4,
+                16.265
+              ],
+              "hoop_bbox": [
+                905.77,
+                143.79,
+                978.66,
+                223.16
+              ],
+              "source": "model",
+              "x": -0.9440938400329257,
+              "y": -1.7495541226505695
+            },
+            {
+              "frame": 1315,
+              "timestamp_seconds": 21.9167,
+              "track_id": 119,
+              "ball_center": [
+                880.79,
+                16.21
+              ],
+              "hoop_bbox": [
+                906.5,
+                142.57,
+                980.61,
+                223.61
+              ],
+              "source": "model",
+              "x": -0.8469167453784926,
+              "y": -1.7050330589664007
+            },
+            {
+              "frame": 1338,
+              "timestamp_seconds": 22.3,
+              "track_id": 119,
+              "ball_center": [
+                904.26,
+                109.38
+              ],
+              "hoop_bbox": [
+                883.31,
+                137.19,
+                959.58,
+                219.23
+              ],
+              "source": "model",
+              "x": -0.22531794939032285,
+              "y": -0.36462567195489665
+            },
+            {
+              "frame": 1349,
+              "timestamp_seconds": 22.4833,
+              "track_id": 119,
+              "ball_center": [
+                896.065,
+                214.31
+              ],
+              "hoop_bbox": [
+                856.77,
+                135.97,
+                932.89,
+                226.37
+              ],
+              "source": "model",
+              "x": 0.016224382553863995,
+              "y": 1.0291644771413557
+            },
+            {
+              "frame": 1351,
+              "timestamp_seconds": 22.5167,
+              "track_id": 119,
+              "ball_center": [
+                896.625,
+                234.18
+              ],
+              "hoop_bbox": [
+                853.5,
+                134.59,
+                928.63,
+                218.18
+              ],
+              "source": "model",
+              "x": 0.0740050578996399,
+              "y": 1.3255690137095701
+            }
+          ],
+          "crossing_x_in_hoop_widths": -0.1621287130854107,
+          "crossing_frame": 1349,
+          "crossing_gap_frames": 10,
+          "end_frame": 1351,
+          "end_seconds": 22.5167,
+          "outcome": "possible_make",
+          "provisional": true,
+          "reason": "Observed descent crosses the hoop proxy and continues below it."
+        },
+        {
+          "candidate_id": 7,
+          "track_id": 159,
+          "start_frame": 1570,
+          "start_seconds": 26.1667,
+          "evidence": [
+            {
+              "frame": 1570,
+              "timestamp_seconds": 26.1667,
+              "track_id": 159,
+              "ball_center": [
+                791.89,
+                103.505
+              ],
+              "hoop_bbox": [
+                628.76,
+                220.44,
+                708.41,
+                306.59
+              ],
+              "source": "model",
+              "x": 1.5480853735091022,
+              "y": -1.4681104833647212
+            },
+            {
+              "frame": 1571,
+              "timestamp_seconds": 26.1833,
+              "track_id": 159,
+              "ball_center": [
+                775.45,
+                112.66499999999999
+              ],
+              "hoop_bbox": [
+                627.77,
+                220.06,
+                708.72,
+                307.12
+              ],
+              "source": "model",
+              "x": 1.3243360098826433,
+              "y": -1.3266831377393447
+            }
+          ],
+          "end_frame": 1594,
+          "end_seconds": 26.5667,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 8,
+          "track_id": 166,
+          "start_frame": 1668,
+          "start_seconds": 27.8,
+          "evidence": [
+            {
+              "frame": 1668,
+              "timestamp_seconds": 27.8,
+              "track_id": 166,
+              "ball_center": [
+                849.365,
+                93.425
+              ],
+              "hoop_bbox": [
+                655.64,
+                215.73,
+                733.69,
+                300.47
+              ],
+              "source": "model",
+              "x": 1.9820627802690571,
+              "y": -1.5670083279948737
+            },
+            {
+              "frame": 1669,
+              "timestamp_seconds": 27.8167,
+              "track_id": 166,
+              "ball_center": [
+                832.175,
+                100.5
+              ],
+              "hoop_bbox": [
+                652.63,
+                213.47,
+                732.96,
+                300.68
+              ],
+              "source": "model",
+              "x": 1.7350927424374432,
+              "y": -1.406323913855346
+            }
+          ],
+          "end_frame": 1694,
+          "end_seconds": 28.2333,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 9,
+          "track_id": 173,
+          "start_frame": 1778,
+          "start_seconds": 29.6333,
+          "evidence": [
+            {
+              "frame": 1778,
+              "timestamp_seconds": 29.6333,
+              "track_id": 173,
+              "ball_center": [
+                867.6800000000001,
+                85.22
+              ],
+              "hoop_bbox": [
+                671.16,
+                206.17,
+                753.41,
+                295.02
+              ],
+              "source": "model",
+              "x": 1.8893009118541044,
+              "y": -1.4705167173252278
+            },
+            {
+              "frame": 1779,
+              "timestamp_seconds": 29.65,
+              "track_id": 173,
+              "ball_center": [
+                849.79,
+                95.1
+              ],
+              "hoop_bbox": [
+                671.19,
+                206.06,
+                753.42,
+                295.23
+              ],
+              "source": "model",
+              "x": 1.6719567067980063,
+              "y": -1.3493858689042946
+            },
+            {
+              "frame": 1796,
+              "timestamp_seconds": 29.9333,
+              "track_id": 173,
+              "ball_center": [
+                739.36,
+                201.575
+              ],
+              "hoop_bbox": [
+                677.72,
+                203.9,
+                756.33,
+                291.63
+              ],
+              "source": "model",
+              "x": 0.2841241572319033,
+              "y": -0.029576389772293814
+            },
+            {
+              "frame": 1805,
+              "timestamp_seconds": 30.0833,
+              "track_id": 173,
+              "ball_center": [
+                696.5450000000001,
+                214.08
+              ],
+              "hoop_bbox": [
+                678.73,
+                200.99,
+                755.8,
+                288.78
+              ],
+              "source": "model",
+              "x": -0.26884650317892733,
+              "y": 0.16984559491371498
+            },
+            {
+              "frame": 1841,
+              "timestamp_seconds": 30.6833,
+              "track_id": 173,
+              "ball_center": [
+                790.3,
+                250.38
+              ],
+              "hoop_bbox": [
+                671.92,
+                199.4,
+                753.45,
+                291.95
+              ],
+              "source": "model",
+              "x": 0.9519808659389173,
+              "y": 0.625291303814546
+            }
+          ],
+          "crossing_x_in_hoop_widths": 0.20211275908688783,
+          "crossing_frame": 1805,
+          "crossing_gap_frames": 8,
+          "end_frame": 1841,
+          "end_seconds": 30.6833,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Crossing is ambiguous near the hoop edge."
+        },
+        {
+          "candidate_id": 10,
+          "track_id": 183,
+          "start_frame": 2000,
+          "start_seconds": 33.3333,
+          "evidence": [
+            {
+              "frame": 2000,
+              "timestamp_seconds": 33.3333,
+              "track_id": 183,
+              "ball_center": [
+                864.485,
+                91.30000000000001
+              ],
+              "hoop_bbox": [
+                677.99,
+                200.14,
+                756.92,
+                288.71
+              ],
+              "source": "model",
+              "x": 1.8627898137590293,
+              "y": -1.3789433675408596
+            },
+            {
+              "frame": 2003,
+              "timestamp_seconds": 33.3833,
+              "track_id": 183,
+              "ball_center": [
+                827.99,
+                111.05
+              ],
+              "hoop_bbox": [
+                677.62,
+                202.52,
+                755.35,
+                289.33
+              ],
+              "source": "model",
+              "x": 1.434516917535057,
+              "y": -1.1767657275183325
+            }
+          ],
+          "end_frame": 2026,
+          "end_seconds": 33.7667,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 11,
+          "track_id": 207,
+          "start_frame": 2236,
+          "start_seconds": 37.2667,
+          "evidence": [
+            {
+              "frame": 2236,
+              "timestamp_seconds": 37.2667,
+              "track_id": 207,
+              "ball_center": [
+                834.155,
+                100.215
+              ],
+              "hoop_bbox": [
+                655.11,
+                207.35,
+                730.5,
+                291.37
+              ],
+              "source": "model",
+              "x": 1.8749170977583225,
+              "y": -1.4210770659238627
+            },
+            {
+              "frame": 2237,
+              "timestamp_seconds": 37.2833,
+              "track_id": 207,
+              "ball_center": [
+                817.335,
+                114.4
+              ],
+              "hoop_bbox": [
+                655.33,
+                207.11,
+                730.54,
+                291.17
+              ],
+              "source": "model",
+              "x": 1.6540353676372852,
+              "y": -1.2326818242255033
+            },
+            {
+              "frame": 2248,
+              "timestamp_seconds": 37.4667,
+              "track_id": 207,
+              "ball_center": [
+                731.2049999999999,
+                201.70499999999998
+              ],
+              "hoop_bbox": [
+                655.31,
+                201.91,
+                737.5,
+                291.23
+              ],
+              "source": "model",
+              "x": 0.4234091738654329,
+              "y": -0.002494220708115493
+            },
+            {
+              "frame": 2251,
+              "timestamp_seconds": 37.5167,
+              "track_id": 207,
+              "ball_center": [
+                724.49,
+                207.26999999999998
+              ],
+              "hoop_bbox": [
+                656.79,
+                197.77,
+                736.64,
+                289.25
+              ],
+              "source": "model",
+              "x": 0.3478396994364444,
+              "y": 0.1189730745147147
+            },
+            {
+              "frame": 2293,
+              "timestamp_seconds": 38.2167,
+              "track_id": 207,
+              "ball_center": [
+                935.095,
+                236.43
+              ],
+              "hoop_bbox": [
+                662.71,
+                189.07,
+                740.12,
+                275.28
+              ],
+              "source": "model",
+              "x": 3.0187314300477994,
+              "y": 0.6118072600439224
+            }
+          ],
+          "crossing_x_in_hoop_widths": 0.4218574232672459,
+          "crossing_frame": 2251,
+          "crossing_gap_frames": 2,
+          "end_frame": 2293,
+          "end_seconds": 38.2167,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Crossing is ambiguous near the hoop edge."
+        },
+        {
+          "candidate_id": 12,
+          "track_id": 278,
+          "start_frame": 2579,
+          "start_seconds": 42.9833,
+          "evidence": [
+            {
+              "frame": 2579,
+              "timestamp_seconds": 42.9833,
+              "track_id": 278,
+              "ball_center": [
+                845.97,
+                74.94
+              ],
+              "hoop_bbox": [
+                661.78,
+                187.18,
+                738.04,
+                273.28
+              ],
+              "source": "model",
+              "x": 1.915289798059272,
+              "y": -1.4718069761342778
+            },
+            {
+              "frame": 2580,
+              "timestamp_seconds": 43.0,
+              "track_id": 278,
+              "ball_center": [
+                826.2750000000001,
+                87.775
+              ],
+              "hoop_bbox": [
+                662.79,
+                188.27,
+                736.74,
+                272.79
+              ],
+              "source": "model",
+              "x": 1.7107505070993918,
+              "y": -1.358958755916159
+            }
+          ],
+          "end_frame": 2603,
+          "end_seconds": 43.3833,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 13,
+          "track_id": 302,
+          "start_frame": 2696,
+          "start_seconds": 44.9333,
+          "evidence": [
+            {
+              "frame": 2696,
+              "timestamp_seconds": 44.9333,
+              "track_id": 302,
+              "ball_center": [
+                807.0899999999999,
+                98.455
+              ],
+              "hoop_bbox": [
+                632.66,
+                197.73,
+                708.8,
+                282.96
+              ],
+              "source": "model",
+              "x": 1.7909114788547402,
+              "y": -1.3038481744155503
+            },
+            {
+              "frame": 2703,
+              "timestamp_seconds": 45.05,
+              "track_id": 302,
+              "ball_center": [
+                724.815,
+                161.565
+              ],
+              "hoop_bbox": [
+                621.8,
+                196.55,
+                701.18,
+                282.78
+              ],
+              "source": "model",
+              "x": 0.7977450239355007,
+              "y": -0.4407281431090957
+            }
+          ],
+          "end_frame": 2719,
+          "end_seconds": 45.3167,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 14,
+          "track_id": 356,
+          "start_frame": 2930,
+          "start_seconds": 48.8333,
+          "evidence": [
+            {
+              "frame": 2930,
+              "timestamp_seconds": 48.8333,
+              "track_id": 356,
+              "ball_center": [
+                754.29,
+                117.94
+              ],
+              "hoop_bbox": [
+                640.05,
+                204.74,
+                713.55,
+                289.87
+              ],
+              "source": "model",
+              "x": 1.0542857142857145,
+              "y": -1.1809523809523812
+            },
+            {
+              "frame": 2931,
+              "timestamp_seconds": 48.85,
+              "track_id": 356,
+              "ball_center": [
+                738.71,
+                134.195
+              ],
+              "hoop_bbox": [
+                632.82,
+                207.96,
+                708.04,
+                291.86
+              ],
+              "source": "model",
+              "x": 0.9077373039085357,
+              "y": -0.9806567402286639
+            }
+          ],
+          "end_frame": 2948,
+          "end_seconds": 49.1333,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 15,
+          "track_id": 376,
+          "start_frame": 3045,
+          "start_seconds": 50.75,
+          "evidence": [
+            {
+              "frame": 3045,
+              "timestamp_seconds": 50.75,
+              "track_id": 376,
+              "ball_center": [
+                758.825,
+                139.09
+              ],
+              "hoop_bbox": [
+                634.27,
+                235.15,
+                707.95,
+                318.7
+              ],
+              "source": "model",
+              "x": 1.1904858849077085,
+              "y": -1.3037459283387611
+            },
+            {
+              "frame": 3046,
+              "timestamp_seconds": 50.7667,
+              "track_id": 376,
+              "ball_center": [
+                744.66,
+                152.38
+              ],
+              "hoop_bbox": [
+                633.76,
+                234.12,
+                707.93,
+                318.35
+              ],
+              "source": "model",
+              "x": 0.9952136982607521,
+              "y": -1.1020628286369158
+            }
+          ],
+          "end_frame": 3063,
+          "end_seconds": 51.05,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 16,
+          "track_id": 387,
+          "start_frame": 3156,
+          "start_seconds": 52.6,
+          "evidence": [
+            {
+              "frame": 3156,
+              "timestamp_seconds": 52.6,
+              "track_id": 387,
+              "ball_center": [
+                793.7,
+                97.89
+              ],
+              "hoop_bbox": [
+                644.08,
+                221.74,
+                719.04,
+                306.82
+              ],
+              "source": "model",
+              "x": 1.4959978655282846,
+              "y": -1.6522145144076859
+            },
+            {
+              "frame": 3157,
+              "timestamp_seconds": 52.6167,
+              "track_id": 387,
+              "ball_center": [
+                783.37,
+                108.56
+              ],
+              "hoop_bbox": [
+                644.69,
+                222.02,
+                720.13,
+                307.47
+              ],
+              "source": "model",
+              "x": 1.3382820784729588,
+              "y": -1.5039766702014858
+            }
+          ],
+          "end_frame": 3180,
+          "end_seconds": 53.0,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 17,
+          "track_id": 395,
+          "start_frame": 3282,
+          "start_seconds": 54.7,
+          "evidence": [
+            {
+              "frame": 3282,
+              "timestamp_seconds": 54.7,
+              "track_id": 395,
+              "ball_center": [
+                794.9649999999999,
+                105.25
+              ],
+              "hoop_bbox": [
+                658.61,
+                211.48,
+                739.8,
+                298.4
+              ],
+              "source": "model",
+              "x": 1.1794555979800476,
+              "y": -1.3084123660549336
+            },
+            {
+              "frame": 3283,
+              "timestamp_seconds": 54.7167,
+              "track_id": 395,
+              "ball_center": [
+                784.0150000000001,
+                121.58
+              ],
+              "hoop_bbox": [
+                659.02,
+                212.83,
+                739.37,
+                298.21
+              ],
+              "source": "model",
+              "x": 1.0556316116988194,
+              "y": -1.1356565028002488
+            }
+          ],
+          "end_frame": 3302,
+          "end_seconds": 55.0333,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        },
+        {
+          "candidate_id": 18,
+          "track_id": 407,
+          "start_frame": 3404,
+          "start_seconds": 56.7333,
+          "evidence": [
+            {
+              "frame": 3404,
+              "timestamp_seconds": 56.7333,
+              "track_id": 407,
+              "ball_center": [
+                837.13,
+                97.14
+              ],
+              "hoop_bbox": [
+                685.28,
+                228.08,
+                759.66,
+                310.37
+              ],
+              "source": "model",
+              "x": 1.5415434256520566,
+              "y": -1.760419467598817
+            },
+            {
+              "frame": 3405,
+              "timestamp_seconds": 56.75,
+              "track_id": 407,
+              "ball_center": [
+                825.7349999999999,
+                108.39
+              ],
+              "hoop_bbox": [
+                685.46,
+                227.96,
+                759.62,
+                310.23
+              ],
+              "source": "model",
+              "x": 1.3915183387270764,
+              "y": -1.6123247033441217
+            }
+          ],
+          "end_frame": 3426,
+          "end_seconds": 57.1,
+          "outcome": "unknown",
+          "provisional": true,
+          "reason": "Ball or hoop observation missing beyond gap allowance."
+        }
+      ],
+      "counts": {
+        "possible_make": 2,
+        "possible_miss": 1,
+        "unknown": 15
+      }
+    }
+  }
+}

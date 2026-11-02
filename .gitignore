@@ -12,3 +12,6 @@ cv/sample_videos/*
 cv/output/
 cv/models/*
 !cv/models/README.md
+data/
+benchmarks/runs/
+.test-tmp/
