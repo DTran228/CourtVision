@@ -167,3 +167,16 @@ Do not describe these external gates as passed or turn old targets into results.
   dimensions/format/integrity passed; git diff --check passed.
 - Application code and dependencies were unchanged. Existing test evidence remains
   the recorded 89-test run; no new application test run was needed for this edit.
+
+## Product-focused README refinement (2026-11-01)
+
+- Reworked the README using the user's reference screenshots for structure:
+  centered product introduction, "Why CourtVision?", benefit-led feature bullets,
+  a concrete workflow, complete Quick Start, footage guidance and a plain-language FAQ.
+- Moved stack, checks, configuration and engineering documents into an expandable
+  developer section. Kept current local-from-source installation explicit and
+  preserved the actual device/quality/cloud validation status near the end.
+- Reused the existing cover and learning archive; application code was unchanged.
+- Documentation checks passed: 20 file/image/navigation references, all setup/demo/
+  check command targets, balanced code fences and 3 expandable sections, plus
+  git diff --check. No application tests were rerun for this documentation edit.

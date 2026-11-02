@@ -1,79 +1,97 @@
 ![CourtVision — basketball practice video review](docs/assets/courtvision-cover.png)
 
-# CourtVision
+<h1 align="center">CourtVision</h1>
 
-### Your basketball practice review app.
+<p align="center">
+  <strong>Your basketball practice review app.</strong><br>
+  Put in the reps. Give your practice a second look.
+</p>
 
-**Turn your practice footage into a session you can revisit.**
+<p align="center">
+  <a href="#why-courtvision">Why CourtVision?</a> ·
+  <a href="#see-the-workflow">How it works</a> ·
+  <a href="#quick-start--installation">Get started</a> ·
+  <a href="#frequently-asked-questions">FAQ</a>
+</p>
 
-Upload a shooting clip, jump to suggested shot attempts, and review each result
-alongside the original video. Correct the calls, add attempts the app missed, and
-keep a history of your reviewed sessions.
+CourtVision turns your shooting clips into practice sessions you can review,
+correct, and revisit. Upload a video, jump to suggested shot attempts, and
+save a record of what happened on the court.
 
-Built for recreational players and student coaches who want a clearer way to
-look back at practice.
+Made for **recreational players, student coaches, and anyone who records
+their shooting practice.**
 
-[Get started](#get-started) · [How it works](#how-it-works) ·
-[Try a demo](#try-a-demo) · [Project status](#project-status)
+---
 
-> **Local prototype:** the app provides automatic estimates for you to review.
-> The local pipeline has been exercised with real footage; the complete workflow
-> still needs a physical-phone walkthrough.
+## Why CourtVision?
 
-## Your footage. Your review.
+Your practice videos have more to offer than a place in your camera roll.
+CourtVision gives you a way to move through the footage, check each attempt,
+and keep your reviewed sessions together.
 
-| What you want to do | How CourtVision helps |
+- 🎯 **Find your next shot to review.** Get suggested attempts with timestamps
+  that take you back to the original footage.
+- ▶️ **Watch the moment behind the result.** Jump just before an attempt,
+  replay the action, and decide what happened.
+- ✏️ **Make the final call.** Change made, missed, or unknown results. Add an
+  attempt the app missed, adjust its timestamp, or remove a false positive.
+- 💾 **Keep your practice log.** Save your edits and reopen past sessions
+  from the Home screen.
+- 📊 **Compare reviewed sessions.** Look back at makes, attempts, and shooting
+  percentages once your reviews are complete.
+- 💻 **Analyze on your own computer.** The current local mode runs without
+  a Modal account or GPU cloud setup.
+
+**You stay in control of the review.** Suggested results are automatic estimates.
+CourtVision keeps an outcome **unknown** when it cannot make a clear call, so
+you can check the video yourself.
+
+---
+
+## See the workflow
+
+**Pick a clip → Analyze → Review the shots → Save your session**
+
+| Step | What you do |
 | --- | --- |
-| Find possible attempts | Suggests shot candidates with timestamps. |
-| Check what happened | Plays the original clip and lets you jump to a candidate. |
-| Make the final call | Change a result to made, missed, or unknown. |
-| Fix the attempt list | Add missed attempts, edit timestamps, and remove false positives. |
-| Pick up where you left off | Saves reviews and keeps submitted jobs available from Home. |
-| Look back at practice | Shows session history and compares completed, resolved reviews. |
+| **1. Pick your clip** | Open **Get started**, choose a video, and tap **Upload and analyze on computer**. |
+| **2. Follow the analysis** | Leave the analysis running while CourtVision prepares timestamped suggestions. You can reopen submitted jobs from Home. |
+| **3. Review your shots** | Tap **Review results**, then choose an attempt to play from just before its timestamp. Correct, add, or remove attempts as you watch. |
+| **4. Save your session** | Save your edits. When you have watched the full clip, confirm **All attempts reviewed** and save again. |
+| **5. Come back to your practice** | Open **Session history** on Home to revisit a session or compare completed reviews. |
 
-Automatic estimates and your corrections are stored separately. Shooting
-percentage appears only after you confirm the review is complete and resolve
-all unknown outcomes.
+Shooting percentage appears when the review is complete and every outcome is
+resolved. Watch the whole clip before confirming completeness so you can catch
+attempts the app may not have suggested.
 
-## How it works
+---
 
-**Choose a clip → Upload → Analyze → Review → Save**
+## Quick Start & Installation
 
-1. **Choose your practice video.** Select a short clip from your phone.
-2. **Send it to your computer.** The backend accepts the upload and queues the analysis.
-3. **Follow the progress.** See the job stage and processed frames as the worker runs.
-4. **Review the moments.** Tap a candidate to seek just before its timestamp.
-   Watch the full clip to catch attempts the app may have missed.
-5. **Make it your session.** Correct results, add or remove attempts, and save.
-   Mark **All attempts reviewed** when you have checked the full clip.
-6. **Come back later.** Open a saved session from Home to revisit your review.
+The current version runs **locally from source**, with your computer handling
+analysis and your phone providing the review interface.
 
-Local CPU mode works without a Modal account. An optional GPU adapter is available
-for future cloud experiments.
+### What you'll need
 
-## Get started
+| On your computer | On your phone |
+| --- | --- |
+| Python **3.12** | Expo Go compatible with **Expo SDK 57**, or a compatible development build |
+| Node.js and npm | Access to your practice video |
+| A connection to your private Wi-Fi network | The same Wi-Fi network as your computer |
 
-### What you need
+These instructions use **Windows PowerShell**. For additional setup details,
+see the [full setup guide](docs/RUNBOOK.md).
 
-- **Python 3.12**
-- **Node.js and npm**
-- **A phone with Expo Go compatible with Expo SDK 57**, or a compatible development build
-- Your phone and computer on the **same trusted local network**
-- A short basketball practice clip that meets the [video requirements](#choose-the-right-clip)
-
-The commands below use **Windows PowerShell**. Run them from the repository root
-unless a step says otherwise. The full setup notes are in the [runbook](docs/RUNBOOK.md).
-
-### 1. Get the project
+### 1. Download CourtVision
 
 ```powershell
 git clone https://github.com/DTran228/CourtVision.git
 cd CourtVision
 ```
 
-Already have the repo? Open a terminal in your existing checkout.
+Already cloned the project? Start in your existing CourtVision folder.
 
-### 2. Set up Python and the detector
+### 2. Set up video analysis
 
 ```powershell
 python -m venv .venv
@@ -81,14 +99,11 @@ python -m venv .venv
 .\.venv\Scripts\python.exe cv/src/download_model.py
 ```
 
-Reuse an existing working virtual environment if you already have one. Calling
-its Python executable directly means you do not need to activate it.
+The last command downloads the pretrained detector used for shot suggestions.
+You only need to download it once. If you already have a working `.venv`,
+reuse it.
 
-The model download is a one-time setup step. CourtVision uses the pretrained
-**E-BARD YOLOv8n detector by Gabriele Giudici**, with pinned weights and a hash
-check. See [model attribution and licensing](cv/models/README.md).
-
-### 3. Install the mobile dependencies
+### 3. Set up the mobile app
 
 ```powershell
 cd mobile
@@ -96,201 +111,237 @@ npm ci
 cd ..
 ```
 
-### 4. Start the app
+### 4. Start CourtVision
 
-Keep these **three terminals** open.
+Open **three terminals** and keep them running while you use the app.
+Terminals 1 and 2 start from the CourtVision folder.
 
-**Terminal 1 — API, from the repository root**
+**Terminal 1 · Start the backend**
 
 ```powershell
 .\.venv\Scripts\python.exe -m uvicorn backend.app.main:app --host 0.0.0.0 --port 8000
 ```
 
-Check [API health](http://127.0.0.1:8000/health) on your computer.
-It should return `{"status":"ok"}`.
+Open [the health check](http://127.0.0.1:8000/health) on your computer.
+If you see `{"status":"ok"}`, the backend is ready.
 
-**Terminal 2 — analysis worker, from the repository root**
+**Terminal 2 · Start video processing**
 
 ```powershell
 .\.venv\Scripts\python.exe -m backend.app.worker
 ```
 
-The worker processes queued videos. Keep it running alongside the API.
+This process picks up submitted videos and analyzes them.
 
-**Terminal 3 — Expo**
+**Terminal 3 · Open the mobile app**
 
 ```powershell
 cd mobile
 npm start
 ```
 
-Open the project in a compatible Expo Go app or development build.
+Open the project in your compatible Expo Go app or development build.
 
 ### 5. Connect your phone
 
-On your computer, run:
+1. Run `ipconfig` on your computer and find the **IPv4 Address** for your
+   Wi-Fi adapter.
+2. On the CourtVision Home screen, enter that address with port **8000**.
+   For example, `http://192.168.1.10:8000`.
+3. Tap **Connect / refresh history**.
+4. Tap **Get started**, choose a clip, and begin your first review.
 
-```powershell
-ipconfig
+Use **your computer's actual IP address** in place of the example. If your
+firewall prompts you, allow the backend port on your trusted private network.
+
+**That's your setup. For future sessions, start the three terminals and open
+CourtVision on your phone.**
+
+<details>
+<summary><strong>Optional: remember the initial backend address</strong></summary>
+
+Create `mobile/.env` using [mobile/.env.example](mobile/.env.example) as a guide:
+
+```dotenv
+EXPO_PUBLIC_API_URL=http://192.168.1.10:8000
 ```
 
-Find the IPv4 address of the adapter connected to your local network. On the
-CourtVision Home screen, enter a backend URL such as:
+Replace the address with your computer's IP, then restart Expo. You can still
+change the connection address on the Home screen.
 
-`http://192.168.1.10:8000`
+</details>
 
-Replace the example IP with **your computer's address**, then tap
-**Connect / refresh history**. If prompted by your firewall, allow the backend
-port on your trusted private network.
+---
 
-You can also set the initial address through
-[mobile/.env.example](mobile/.env.example). Put your value in `mobile/.env`
-and restart Expo after changing it.
+## Get the best from your footage
 
-You're ready to choose a clip and start a review.
+Start with a short shooting drill where the camera stays mostly still and
+one target hoop remains visible.
 
-## Choose the right clip
-
-CourtVision currently works within these limits:
-
-| Requirement | Supported scope |
+| Clip setting | Current support |
 | --- | --- |
-| Length | Up to 120 seconds |
-| File size | Up to 250 MiB |
-| Resolution | Up to 1080p, including portrait orientation |
-| Video type | MP4, MOV, or MKV that the backend can decode |
-| Timing | Constant frame rate (CFR), 1–120 FPS, with a zero video start |
-| Scene | One visible target hoop, a mostly stationary camera, one active shot at a time |
+| **Length** | Up to **2 minutes** |
+| **Size** | Up to **250 MiB** |
+| **Resolution** | Up to **1080p**, landscape or portrait |
+| **Format** | MP4, MOV, or a decodable MKV |
+| **Frame rate** | Constant frame rate (CFR), **1–120 FPS** |
+| **Scene** | One visible hoop and one active shot at a time |
 
-**What is CFR?** A constant-frame-rate video uses evenly spaced frame times.
-Some phone videos use a variable frame rate (VFR). The current app rejects those
-files so candidate timestamps do not silently point to the wrong moment.
-Export a CFR copy with a zero start before uploading, and keep your original.
+**A quick note about phone recordings:** some phones record at a variable frame
+rate (VFR). If CourtVision rejects the timing of your clip, export a
+**constant-frame-rate copy with its timeline starting at 0:00** and try that
+copy. Keep the original recording.
 
-Broadcast cuts, simultaneous shots, and heavily obscured footage are outside
-the initial supported scope.
+Fast camera cuts, simultaneous shots, and a heavily obscured hoop are outside
+the current supported scope.
 
-## Try a demo
+---
 
-### Explore the workflow without footage or model weights
+## Try a demo on your computer
 
-From the repository root, after installing the Python dependencies:
+Want to explore the workflow before connecting a phone? After installing the
+Python dependencies, run this from the CourtVision folder:
 
 ```powershell
 .\.venv\Scripts\python.exe -m tools.demo --synthetic --output data/my-first-demo
 ```
 
-This creates a tiny generated video, uses scripted detections, and exercises
-upload, jobs, result storage, and a saved review. It writes `demo.json` with
-the result location.
+This uses a tiny generated video and scripted detections to walk through
+upload, analysis jobs, result storage, and a saved review. It writes a
+`demo.json` file containing the result location.
 
-**This demo verifies the workflow; it does not measure basketball accuracy.**
-It uses its own database and does not modify your normal app sessions.
-Choose a new output directory each time you run it.
+The demo uses a separate database, so your normal sessions stay untouched.
+Use a **new output folder** each time. The generated example demonstrates
+the workflow; it does not measure basketball accuracy.
 
-### Analyze your own clip with the real model
+<details>
+<summary><strong>Try the real detector on your own video</strong></summary>
 
-After downloading the model, place a supported clip at
-`cv/sample_videos/my-practice.mp4`, then run:
+Download the model during setup, then place a supported clip at
+`cv/sample_videos/my-practice.mp4`:
 
 ```powershell
 .\.venv\Scripts\python.exe -m tools.demo --video cv/sample_videos/my-practice.mp4 --output data/my-practice-demo
 ```
 
-This runs real CPU inference and may take several minutes. Videos and generated
-analysis files are excluded from Git. For the phone workflow, use the three
-running processes described above and select the clip in the app.
+CPU analysis may take several minutes. Your clip and generated analysis
+artifacts are excluded from Git. More demo options are in the
+[setup guide](docs/RUNBOOK.md).
 
-More demos, evaluation commands, and process-level checks are in the
-[runbook](docs/RUNBOOK.md).
+</details>
 
-## Built with
+---
 
-- **Expo, React Native, and TypeScript** — phone interface and video review
-- **FastAPI** — uploads, analysis status, sessions, and reviews
-- **SQLite and local files** — persistent jobs, review revisions, videos, and results
-- **Python, OpenCV, PyAV, and Ultralytics YOLO** — video timing, detection, tracking, and shot estimates
-- **Modal, optionally** — prepared GPU execution adapter
+## Frequently asked questions
 
-The local architecture stays small:
+**Do I need a cloud account or a dedicated GPU?**
 
-```text
-Expo app → FastAPI → SQLite + local files
-                         ↓
-                   One job worker
-                         ↓
-               Video analysis pipeline
-```
+No. The local workflow runs on your computer's CPU. An optional Modal adapter
+is available for development experiments; it is not needed to get started.
 
-## Checks
+**Are the suggested results final?**
 
-Run the offline Python suite from the repository root:
+You make the final call. Review the original video, correct uncertain results,
+and check for attempts the app missed. An unknown result means the app did not
+have enough clear evidence to choose made or missed.
+
+**Why can't my phone connect?**
+
+Check that both devices are on the same private Wi-Fi network. Enter your
+computer's IPv4 address, including `:8000`. `localhost` on a phone points to
+the phone itself. Also check that the backend is running and the firewall
+allows the connection.
+
+**Why is my video still queued?**
+
+Make sure the video-processing terminal is running. Both backend processes
+must use the same data folder; the default is `data/` inside the checkout.
+
+**Why isn't a shooting percentage showing?**
+
+Finish the review, resolve every unknown outcome, and save with
+**All attempts reviewed** enabled. A session with no attempts has no percentage.
+
+**Can I leave and return to a session?**
+
+Yes. Save your review, then reopen it from Home. Submitted jobs also remain
+available there. If a local analysis was interrupted, restart the worker and
+use **Retry failed analysis**. If saving reports a review conflict, reload the
+latest saved version before editing again.
+
+---
+
+## Growing with your practice
+
+CourtVision is in **active development**, with the local upload, analysis,
+review, and session-history workflow implemented.
+
+The next focus is broader phone testing, evaluating shot quality across more
+practice recordings, and measuring whether optional GPU processing improves
+the full wait from upload to review.
+
+The full phone workflow still needs physical-device validation. Accuracy,
+cloud speedup, and review-time improvements have not yet been established.
+Follow [development progress](docs/PROGRESS.md) for the supporting evidence
+and upcoming work.
+
+---
+
+<details>
+<summary><strong>For developers: stack, checks, and project guides</strong></summary>
+
+### Built with
+
+- **Expo, React Native, and TypeScript** for the phone interface
+- **FastAPI** for uploads, processing status, sessions, and reviews
+- **SQLite and local files** for saved jobs, results, and review revisions
+- **Python, OpenCV, PyAV, and Ultralytics YOLO** for video analysis
+- **Modal, optionally**, for GPU execution experiments
+
+CourtVision uses the pretrained **E-BARD YOLOv8n detector by Gabriele Giudici**.
+See [model provenance and licensing](cv/models/README.md) for attribution.
+The baseline tracker is the default; the candidate tracker remains experimental.
+
+### Run checks
+
+From the repository root:
 
 ```powershell
 .\.venv\Scripts\python.exe -m tools.checks
 ```
 
-Check the mobile TypeScript code:
+For the mobile app:
 
 ```powershell
 cd mobile
 npm run typecheck
 ```
 
-Ordinary tests use small fixtures and mocked cloud transport. They do not make
-paid GPU calls. The [recorded verification](docs/evidence/final-checks.json)
-contains the previous 89-test passing run; see
-[progress](docs/PROGRESS.md) for the full check history.
-
-## Need a hand?
-
-| What you see | What to try |
-| --- | --- |
-| Phone cannot connect | Use the computer's LAN IPv4 address. `localhost` on a phone points to the phone. Check Wi-Fi and firewall settings. |
-| A job stays queued | Start the worker in a second terminal. API and worker must use the same data directory. |
-| Upload rejected | Check file size, duration, resolution, and CFR timing against the requirements above. |
-| Shooting percentage is missing | Complete the review and resolve every unknown result. Empty sessions also have no FG%. |
-| Saving returns a 409 conflict | Reload the latest saved review before editing again. |
-| A local analysis was interrupted | Restart the worker, open the failed job from Home, and retry. After a pipeline code change, submit a new job. |
-
-The default data directory is `data/` inside the checkout. If you set
-`COURTVISION_DATA`, use the same value in both API and worker terminals.
-Backend environment variables are not automatically loaded from `.env`.
-
-The MVP is for a single user on a trusted local network. If you expose the
-backend beyond that, configure `COURTVISION_ACCESS_TOKEN` and enter it in the
-app. Keep Modal credentials server-side.
-
-## Project status
-
-**The local review workflow is implemented.** Real footage has passed local
-CPU smoke runs, and a separate API/worker check verified that a saved review
-survives an API restart. Mobile typechecking and iOS JavaScript/Hermes export
-have also passed.
-
-Work still to validate:
-
-- The full upload, playback, and review experience on a physical phone
-- Shot quality on independently labeled, session-held-out footage
-- Live CPU/Modal parity, cold and warm latency, and cloud cost
-- Review-time impact with actual players or coaches
-
-The baseline tracker remains the default; the candidate tracker is experimental.
-No GPU speedup or accuracy improvement is claimed. Results remain suggestions
-to review. Some Expo dependency advisories also remain recorded in the
+Ordinary tests make no paid cloud calls. The
+[recorded verification](docs/evidence/final-checks.json) contains the previous
+89-test passing run. Remaining Expo dependency advisories are recorded in the
 [dependency audit](docs/evidence/npm-audit.json).
 
-## Explore the project
+### Configuration
 
-| Document | What's inside |
+If you change `COURTVISION_DATA`, set the same value in both backend terminal
+sessions. Backend variables are not automatically loaded from `.env`.
+The current app is for single-user use on a trusted local network. If the
+backend is exposed beyond that, configure `COURTVISION_ACCESS_TOKEN` and
+enter it in the app. Keep Modal credentials server-side.
+
+### Project guides
+
+| Guide | What you'll find |
 | --- | --- |
-| [Runbook](docs/RUNBOOK.md) | Setup, demo workflow, checks, and operational details |
-| [Progress](docs/PROGRESS.md) | Milestones, exact checks, and remaining work |
-| [Dataset guide](docs/DATASET.md) | Annotation format, splits, and evaluation rules |
-| [Tracking experiments](docs/ASSOCIATION.md) | Baseline and candidate association comparisons |
-| [Modal guide](docs/MODAL.md) | Optional cloud setup and validation prerequisites |
-| [Benchmark protocol](docs/BENCHMARKS.md) | Reproducible timing experiments and raw evidence |
-| [Model provenance](cv/models/README.md) | Pretrained weights, attribution, and licensing |
-| [Learning archive](docs/history/README-learning.md) | The original lessons and early development notes |
+| [Runbook](docs/RUNBOOK.md) | Detailed setup, demos, and operational help |
+| [Progress](docs/PROGRESS.md) | Milestones and verification history |
+| [Dataset](docs/DATASET.md) | Labels, recording-session splits, and evaluation |
+| [Tracking](docs/ASSOCIATION.md) | Association experiments and comparisons |
+| [Modal](docs/MODAL.md) | Optional GPU adapter and validation prerequisites |
+| [Benchmarks](docs/BENCHMARKS.md) | Timing protocol and reproducible evidence |
+| [Learning archive](docs/history/README-learning.md) | Original lessons and early development notes |
 
 The cover is AI-generated conceptual artwork, not a screenshot of the app.
+
+</details>
