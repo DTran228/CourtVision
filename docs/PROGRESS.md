@@ -150,3 +150,20 @@ remain open until explicitly verified. See later entries for exact commands.
 Start with RUNBOOK.md for commands and the review workflow. DATASET.md,
 ASSOCIATION.md, MODAL.md, BENCHMARKS.md and RESUME_CLAIMS.md explain the open gates.
 Do not describe these external gates as passed or turn old targets into results.
+
+## README and cover refresh (2026-11-01)
+
+- Rewrote the root README around "Your basketball practice review app." with
+  product features, setup, API/worker/Expo startup, phone connection, video
+  requirements, synthetic/real-model demos, checks and troubleshooting.
+- Preserved the previous README in docs/history/README-learning.md. Its text and
+  commands are unchanged; relative links were adjusted for the archive location.
+- Created docs/assets/courtvision-cover.png with the built-in image_gen tool,
+  verified the CourtVision wordmark visually, and linked the image from README.
+  The 2172 x 724 PNG is conceptual cover artwork, not a product screenshot.
+  The exact generation prompt is saved beside the asset.
+- Documentation checks: 22 README links and 9 archive links checked; local paths
+  and navigation anchors passed. Archive preservation comparison passed. PNG
+  dimensions/format/integrity passed; git diff --check passed.
+- Application code and dependencies were unchanged. Existing test evidence remains
+  the recorded 89-test run; no new application test run was needed for this edit.
